@@ -22,7 +22,8 @@ def savefig(fig_mpl, fig_plotly, name, T, F):
 
 def main():
     c = cfg(); T = path(c["output"]["tables"]); F = path(c["output"]["figures"]); T.mkdir(parents=True, exist_ok=True); F.mkdir(parents=True, exist_ok=True)
-    post = pd.read_parquet(work_dir() / "postings_clean.parquet", columns=["job_id", "annual_wage_usd", "isic_section", "isic_section_label", "formatted_experience_level", "remote_allowed", "formatted_work_type"])
+    post = pd.read_parquet(work_dir() / "postings_clean.parquet", columns=["job_id", "annual_wage_usd", "isic_section", "isic_section_label", "formatted_experience_level", "remote_allowed", "formatted_work_type", "listed_month"])
+    cur = c.get("corpus", {}).get("currency", "USD")
     var = pd.read_parquet(work_dir() / "variables.parquet")
     occ = pd.read_parquet(work_dir() / "occupations.parquet")
     df = post.merge(var, on="job_id").merge(occ.drop(columns=["title"]), on="job_id", how="left")
@@ -92,8 +93,8 @@ def main():
     d = wp.dropna(subset=["median_wage_green", "median_wage_non_green"]).reset_index()
     fig, ax = plt.subplots(figsize=(7, 4)); y = np.arange(len(d))
     ax.barh(y - 0.2, d.median_wage_non_green / 1000, 0.4, color=GREY, label="Non-green"); ax.barh(y + 0.2, d.median_wage_green / 1000, 0.4, color=GREEN, label="Green")
-    ax.set_yticks(y); ax.set_yticklabels(d.isco08_major_label, fontsize=7.5); ax.set_xlabel("Median posted annual wage (thousand USD)"); ax.legend(); ax.set_title("Posted wages, green vs non-green vacancies, by ISCO-08 major group")
-    pf = go.Figure([go.Bar(y=d.isco08_major_label, x=d.median_wage_non_green, orientation="h", name="Non-green", marker_color=GREY), go.Bar(y=d.isco08_major_label, x=d.median_wage_green, orientation="h", name="Green", marker_color=GREEN)]); pf.update_layout(barmode="group", title="Median posted annual wage (USD) by ISCO-08 major group", xaxis_title="USD")
+    ax.set_yticks(y); ax.set_yticklabels(d.isco08_major_label, fontsize=7.5); ax.set_xlabel(f"Median posted annual wage (thousand {cur})"); ax.legend(); ax.set_title("Posted wages, green vs non-green vacancies, by ISCO-08 major group")
+    pf = go.Figure([go.Bar(y=d.isco08_major_label, x=d.median_wage_non_green, orientation="h", name="Non-green", marker_color=GREY), go.Bar(y=d.isco08_major_label, x=d.median_wage_green, orientation="h", name="Green", marker_color=GREEN)]); pf.update_layout(barmode="group", title=f"Median posted annual wage ({cur}) by ISCO-08 major group", xaxis_title=cur)
     savefig(fig, pf, "f05_wages_by_isco_major", T, F)
 
     # ---- 6. other characteristics available in the data
@@ -108,6 +109,21 @@ def main():
     pf = px.histogram(g, x="green_share", nbins=40, title="Green task intensity among green vacancies", labels={"green_share": "Share of green tasks"}, color_discrete_sequence=[GREEN]); pf.add_vline(x=summary["mean_green_share_among_green"], line_dash="dash")
     savefig(fig, pf, "f06_intensity", T, F)
 
+    # ---- 8. monthly series (only when the corpus has several months with enough postings)
+    mm = df.dropna(subset=["listed_month"]).groupby("listed_month").agg(n=("job_id", "size"), green_share=("green_any", "mean"), darker_share=("green_shade", lambda x: (x == "darker green").mean())).reset_index()
+    mm = mm[mm["n"] >= 500]
+    summary["n_months"] = int(len(mm))
+    if len(mm) >= 2:
+        mm.round(4).to_csv(T / "t23_green_by_month.csv", index=False)
+        fig, ax = plt.subplots(figsize=(6.5, 3.5)); ax.plot(mm["listed_month"], 100 * mm["green_share"], marker="o", color=GREEN, label="green"); ax.plot(mm["listed_month"], 100 * mm["darker_share"], marker="o", color=DARK, ls="--", label="darker green")
+        ax.set_ylabel("Share of vacancies (%)"); ax.set_title("Green vacancies by month of listing"); ax.legend()
+        for x, n in zip(mm["listed_month"], mm["n"]): ax.annotate(f"n={n:,}", (x, 100 * mm.loc[mm.listed_month == x, "green_share"].iloc[0]), textcoords="offset points", xytext=(0, 6), ha="center", fontsize=7)
+        pf = go.Figure([go.Scatter(x=mm["listed_month"], y=100 * mm["green_share"], mode="lines+markers", name="green", marker_color=GREEN, customdata=mm["n"], hovertemplate="%{x}: %{y:.1f}% (n=%{customdata:,})"), go.Scatter(x=mm["listed_month"], y=100 * mm["darker_share"], mode="lines+markers", name="darker green", marker_color=DARK)])
+        pf.update_layout(title="Green vacancies by month of listing", yaxis_title="Share of vacancies (%)")
+        savefig(fig, pf, "f07_green_by_month", T, F)
+        # occupational and industrial distribution per month (ToR: 'overall and per year')
+        om = df.dropna(subset=["listed_month", "isco08_major_label"]).groupby(["listed_month", "isco08_major_label"]).agg(n=("job_id", "size"), green_share=("green_any", "mean")).reset_index()
+        om = om[om.listed_month.isin(mm.listed_month)]; om.round(4).to_csv(T / "t24_green_by_month_and_isco_major.csv", index=False)
     json.dump(summary, open(T / "summary.json", "w"), indent=2)
     print(json.dumps(summary, indent=2)); print(occ_major.to_string(index=False))
 

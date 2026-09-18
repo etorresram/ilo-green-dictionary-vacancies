@@ -1,0 +1,119 @@
+isco08_submajor,isco08_submajor_label,n_green_vacancies,expression,green_df,share_green,share_non_green,z_log_odds
+12,Administrative and Commercial Managers,705,occupational safety,37,0.052,0.004,8.86
+12,Administrative and Commercial Managers,705,site safety,36,0.051,0.005,8.18
+12,Administrative and Commercial Managers,705,site safety supervisor,34,0.048,0.004,8.07
+12,Administrative and Commercial Managers,705,safety supervisor,34,0.048,0.004,8.01
+12,Administrative and Commercial Managers,705,yellow book,27,0.038,0.003,7.49
+12,Administrative and Commercial Managers,705,palm oil,25,0.035,0.003,7.1
+12,Administrative and Commercial Managers,705,safety environment,20,0.028,0.002,6.68
+12,Administrative and Commercial Managers,705,safety standard,27,0.038,0.005,6.37
+12,Administrative and Commercial Managers,705,sime darby,16,0.023,0.001,6.03
+12,Administrative and Commercial Managers,705,conduct safety,16,0.023,0.001,5.95
+12,Administrative and Commercial Managers,705,emergency response,16,0.023,0.001,5.95
+12,Administrative and Commercial Managers,705,risk assessment,45,0.064,0.015,5.58
+12,Administrative and Commercial Managers,705,mechanical engineering,27,0.038,0.007,5.49
+12,Administrative and Commercial Managers,705,engineering design,16,0.023,0.002,5.27
+12,Administrative and Commercial Managers,705,control measure,20,0.028,0.004,5.27
+12,Administrative and Commercial Managers,705,facility equipment,15,0.021,0.002,5.09
+12,Administrative and Commercial Managers,705,preventive maintenance,21,0.03,0.005,5.06
+12,Administrative and Commercial Managers,705,maintenance activity,15,0.021,0.002,4.9
+12,Administrative and Commercial Managers,705,regular inspection,15,0.021,0.003,4.8
+12,Administrative and Commercial Managers,705,electrical engineering,26,0.037,0.008,4.53
+13,Production and Specialized Services Managers,202,product quality,24,0.119,0.031,3.62
+13,Production and Specialized Services Managers,202,raw material,22,0.109,0.027,3.57
+13,Production and Specialized Services Managers,202,operational excellence,20,0.099,0.028,3.04
+13,Production and Specialized Services Managers,202,corrective action,30,0.149,0.055,2.69
+13,Production and Specialized Services Managers,202,mechanical engineering,16,0.079,0.029,2.02
+13,Production and Specialized Services Managers,202,performance indicator,19,0.094,0.037,1.97
+13,Production and Specialized Services Managers,202,continuous improvement,44,0.218,0.106,1.85
+13,Production and Specialized Services Managers,202,industry standard,16,0.079,0.032,1.67
+13,Production and Specialized Services Managers,202,key performance,18,0.089,0.038,1.59
+13,Production and Specialized Services Managers,202,key performance indicator,17,0.084,0.036,1.59
+13,Production and Specialized Services Managers,202,project planning,15,0.074,0.038,0.95
+13,Production and Specialized Services Managers,202,identify area,18,0.089,0.046,0.94
+13,Production and Specialized Services Managers,202,safety environmental,19,0.094,0.0,0.89
+13,Production and Specialized Services Managers,202,engineering equivalent,19,0.094,0.052,0.71
+13,Production and Specialized Services Managers,202,area improvement,15,0.074,0.042,0.59
+13,Production and Specialized Services Managers,202,conduct regular,17,0.084,0.05,0.46
+13,Production and Specialized Services Managers,202,lead manage,18,0.089,0.056,0.26
+13,Production and Specialized Services Managers,202,quality control,31,0.153,0.099,0.22
+13,Production and Specialized Services Managers,202,prove track,15,0.074,0.047,0.19
+13,Production and Specialized Services Managers,202,quality assurance,16,0.079,0.069,-0.95
+21,Science and Engineering Professionals,1026,treatment plant,39,0.038,0.001,6.08
+21,Science and Engineering Professionals,1026,power plant,28,0.027,0.002,5.81
+21,Science and Engineering Professionals,1026,occupational safety,28,0.027,0.002,5.77
+21,Science and Engineering Professionals,1026,engineering sdn,29,0.028,0.004,5.17
+21,Science and Engineering Professionals,1026,engineering sdn bhd,29,0.028,0.004,5.17
+21,Science and Engineering Professionals,1026,safety standard,50,0.049,0.012,5.16
+21,Science and Engineering Professionals,1026,facility engineer,25,0.024,0.003,5.06
+21,Science and Engineering Professionals,1026,single line,27,0.026,0.004,5.06
+21,Science and Engineering Professionals,1026,line diagram,23,0.022,0.003,4.94
+21,Science and Engineering Professionals,1026,detailed engineering,27,0.026,0.004,4.86
+21,Science and Engineering Professionals,1026,oil gas petrochemical,26,0.025,0.004,4.7
+21,Science and Engineering Professionals,1026,single line diagram,21,0.02,0.003,4.62
+21,Science and Engineering Professionals,1026,actively involve,21,0.02,0.003,4.62
+21,Science and Engineering Professionals,1026,non compliance,22,0.021,0.003,4.58
+21,Science and Engineering Professionals,1026,solution share,20,0.019,0.0,4.56
+21,Science and Engineering Professionals,1026,transition design,20,0.019,0.0,4.56
+21,Science and Engineering Professionals,1026,material requisition,18,0.018,0.002,4.53
+21,Science and Engineering Professionals,1026,international code,17,0.017,0.001,4.46
+21,Science and Engineering Professionals,1026,feasibility study,52,0.051,0.016,4.44
+21,Science and Engineering Professionals,1026,building maintenance,16,0.016,0.001,4.4
+24,Business and Administration Professionals,408,actively contribute,17,0.042,0.002,6.72
+24,Business and Administration Professionals,408,closing activity,20,0.049,0.009,4.7
+24,Business and Administration Professionals,408,sale engineer,34,0.083,0.022,4.43
+24,Business and Administration Professionals,408,currently seek,17,0.042,0.008,4.27
+24,Business and Administration Professionals,408,relate activity,18,0.044,0.01,3.52
+24,Business and Administration Professionals,408,senior analyst,16,0.039,0.01,2.99
+24,Business and Administration Professionals,408,key stakeholder,15,0.037,0.011,2.54
+24,Business and Administration Professionals,408,end user,20,0.049,0.016,2.45
+24,Business and Administration Professionals,408,willingness learn,15,0.037,0.013,1.94
+24,Business and Administration Professionals,408,risk assessment,15,0.037,0.014,1.73
+24,Business and Administration Professionals,408,internal external stakeholder,18,0.044,0.018,1.46
+24,Business and Administration Professionals,408,external stakeholder,20,0.049,0.021,1.43
+24,Business and Administration Professionals,408,end closing,20,0.049,0.021,1.37
+24,Business and Administration Professionals,408,journal entry,18,0.044,0.019,1.3
+24,Business and Administration Professionals,408,timely accurate,24,0.059,0.028,1.18
+24,Business and Administration Professionals,408,internal control,43,0.105,0.055,0.92
+24,Business and Administration Professionals,408,erp system,22,0.054,0.027,0.83
+24,Business and Administration Professionals,408,continuous improvement,42,0.103,0.055,0.8
+24,Business and Administration Professionals,408,month end,40,0.098,0.052,0.8
+24,Business and Administration Professionals,408,accurate timely,18,0.044,0.024,0.49
+25,Information and Communications Technology Professionals,225,joinhiltiasiaitservice look,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,touch joinhiltiasiaitservice look,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,touch joinhiltiasiaitservice,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,interview don,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,stay touch joinhiltiasiaitservice,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,second like,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,telephone interview don,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,joinhiltiasiaitservice look forward,16,0.071,0.001,5.72
+25,Information and Communications Technology Professionals,225,exciting career thorough,16,0.071,0.0,4.84
+25,Information and Communications Technology Professionals,225,career thorough people,16,0.071,0.0,4.84
+25,Information and Communications Technology Professionals,225,career thorough,16,0.071,0.0,4.84
+25,Information and Communications Technology Professionals,225,satisfaction additionally,16,0.071,0.0,4.84
+25,Information and Communications Technology Professionals,225,satisfaction additionally offer,16,0.071,0.0,4.84
+25,Information and Communications Technology Professionals,225,dynamic environment,15,0.067,0.014,3.53
+25,Information and Communications Technology Professionals,225,good understanding,29,0.129,0.056,1.72
+25,Information and Communications Technology Professionals,225,information system,20,0.089,0.043,0.98
+25,Information and Communications Technology Professionals,225,closely hilti,16,0.071,0.0,0.96
+25,Information and Communications Technology Professionals,225,test case,17,0.076,0.036,0.95
+25,Information and Communications Technology Professionals,225,site engineer,15,0.067,0.031,0.95
+25,Information and Communications Technology Professionals,225,control system,20,0.089,0.05,0.36
+31,Science and Engineering Associate Professionals,206,product quality,17,0.083,0.023,2.72
+31,Science and Engineering Associate Professionals,206,maintenance activity,15,0.073,0.027,1.81
+31,Science and Engineering Associate Professionals,206,electrical mechanical,18,0.087,0.043,1.07
+31,Science and Engineering Associate Professionals,206,quality control,21,0.102,0.052,1.02
+31,Science and Engineering Associate Professionals,206,continuous improvement,19,0.092,0.049,0.83
+31,Science and Engineering Associate Professionals,206,preventive maintenance,27,0.131,0.076,0.61
+31,Science and Engineering Associate Professionals,206,mechanical engineering,17,0.083,0.063,-0.51
+31,Science and Engineering Associate Professionals,206,mechanical electrical,17,0.083,0.065,-0.62
+31,Science and Engineering Associate Professionals,206,electrical electronic,15,0.073,0.072,-1.4
+31,Science and Engineering Associate Professionals,206,certificate diploma,16,0.078,0.081,-1.65
+33,Business and Administration Associate Professionals,252,external stakeholder,15,0.06,0.024,1.44
+33,Business and Administration Associate Professionals,252,quantity surveyor,19,0.075,0.034,1.06
+33,Business and Administration Associate Professionals,252,proficient microsoft,17,0.067,0.036,0.43
+33,Business and Administration Associate Professionals,252,prove track,19,0.075,0.041,0.38
+33,Business and Administration Associate Professionals,252,industry trend,19,0.075,0.046,-0.16
+33,Business and Administration Associate Professionals,252,key account,18,0.071,0.06,-1.47
+33,Business and Administration Associate Professionals,252,achieve sale,17,0.067,0.079,-2.75
+33,Business and Administration Associate Professionals,252,sale executive,51,0.202,0.25,-5.15

@@ -16,7 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 @functools.lru_cache(maxsize=1)
 def cfg() -> dict:
-    with open(ROOT / "config.yaml") as f:
+    """Configuration file: config.yaml by default, or the file named in the CONFIG environment
+    variable (one file per corpus, e.g. CONFIG=config_my.yaml)."""
+    import os
+    with open(ROOT / os.environ.get("CONFIG", "config.yaml")) as f:
         c = yaml.safe_load(f)
     return c
 

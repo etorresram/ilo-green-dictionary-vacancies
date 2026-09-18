@@ -14,6 +14,10 @@ def main():
     c = cfg(); T = path(c["output"]["tables"]); F = path(c["output"]["figures"]); D = path(c["output"]["site"]); D.mkdir(exist_ok=True)
     s = json.load(open(T / "summary.json"))
     fig = {n: open(F / f"{n}.html").read() for n in ["f01_green_by_isco_major", "f02_green_by_isic_section", "f03_domains", "f04_skills_green_vs_nongreen", "f05_wages_by_isco_major", "f06_intensity"]}
+    fig["f07"] = open(F / "f07_green_by_month.html").read() if (F / "f07_green_by_month.html").exists() else ""
+    cp = c.get("corpus", {}); cur = cp.get("currency", "USD"); key = cp.get("key", "us_linkedin")
+    other = ('<p class="note">Two corpora are available: <a href="../">United States (LinkedIn, Kaggle)</a> and <a href="./">Malaysia (JobStreet, Hugging Face)</a>. Same code, same dictionaries, different exception-list status.</p>' if key != "us_linkedin"
+             else '<p class="note">Two corpora are available: <a href="./">United States (LinkedIn, Kaggle)</a> and <a href="malaysia/">Malaysia (JobStreet, Hugging Face)</a>, an ASEAN member state with a five-month series. Same code, same dictionaries.</p>')
     t0 = pd.read_csv(T / "t00_sample_construction.csv"); t2 = pd.read_csv(T / "t02_occupation_mapping_coverage.csv")
     t10 = pd.read_csv(T / "t10_green_shade_overall.csv"); t14 = pd.read_csv(T / "t14_domains.csv"); t16 = pd.read_csv(T / "t16_wages_by_shade.csv")
     t11b = pd.read_csv(T / "t11b_green_by_isco_major_sensitivity.csv"); t19 = pd.read_csv(T / "t19_candidate_technical_green_skills_by_isco_submajor.csv")
@@ -32,14 +36,15 @@ def main():
       <div class="kpi"><span>Vacancies analysed</span><b>{s['n_postings']:,}</b></div>
       <div class="kpi"><span>Green vacancies (at least one green task)</span><b>{100*s['green_share']:.1f}%</b></div>
       <div class="kpi"><span>Darker green (share of green tasks above the mean)</span><b>{100*s['darker_share']:.1f}%</b></div>
-      <div class="kpi"><span>Median posted wage, green vs non-green</span><b>${s['median_wage_green']:,.0f} vs ${s['median_wage_nongreen']:,.0f}</b></div>
+      <div class="kpi"><span>Median posted wage, green vs non-green ({cur})</span><b>{s['median_wage_green']:,.0f} vs {s['median_wage_nongreen']:,.0f}</b></div>
     </div>"""
     parts = [f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
     <title>ILO Green Dictionary applied to online vacancies</title><style>{css}</style></head><body>
     <h1>Measuring green jobs in online vacancies with the ILO Green Dictionary</h1>
-    <p class="sub">A documented replication of the ILO methodology (Delaporte, Escudero and Adamczyk 2025; Adamczyk et al. 2025) on a public corpus of {s['n_postings']:,} English-language job postings (LinkedIn, United States, 2024). Code, dictionaries and this page: <a href="https://github.com/etorresram/ilo-green-dictionary-vacancies">github.com/etorresram/ilo-green-dictionary-vacancies</a>. Author: Eric Torres Ramírez.</p>
+    <p class="sub">A documented replication of the ILO methodology (Delaporte, Escudero and Adamczyk 2025; Adamczyk et al. 2025) on a public corpus of {s['n_postings']:,} English-language job postings: <b>{html.escape(cp.get('name', ''))}</b> (<a href="{cp.get('source_url', '#')}">source</a>, {html.escape(cp.get('licence', ''))}). Code, dictionaries and this page: <a href="https://github.com/etorresram/ilo-green-dictionary-vacancies">github.com/etorresram/ilo-green-dictionary-vacancies</a>. Author: Eric Torres Ramírez.</p>
+    {other}
     {kp}
-    <p class="note"><b>Read this first.</b> The corpus is a one-month snapshot of vacancies from one country and one platform, so it cannot show trends over time or compare demand with applicants' profiles. The skills variables use the <em>selected</em> keywords published in the ILO brief, not the full taxonomy. All figures are illustrations of the workflow, not estimates of the US labour market.</p>
+    <p class="note"><b>Read this first.</b> Time coverage: {html.escape(cp.get('n_months_note', ''))}. Vacancies come from one platform in one country and there are no applicants' profiles, so demand cannot be compared with supply. The skills variables use the <em>selected</em> keywords published in the ILO brief, not the full taxonomy. {"The exception list was validated on the US corpus and reused here; a corpus-specific context check is pending." if key != "us_linkedin" else ""} All figures illustrate the workflow; none is an estimate of a national labour market.</p>
     <h2>1. What was done</h2>
     <ol>
       <li><b>Data preparation.</b> Duplicate and empty postings removed; posted salaries annualised; LinkedIn industries mapped to ISIC Rev. 4 sections.</li>
@@ -51,6 +56,7 @@ def main():
       <li><b>Validation</b>: context check of frequent terms (75% rule), a blind hand-coding sample, and a boilerplate sensitivity test.</li>
     </ol>
     {table_html(t0)}
+    {"<h2>2. Green vacancies over time</h2><div class='fig'>" + fig["f07"] + "</div><p>Monthly share of vacancies with at least one green task and share of darker-green vacancies; hover for the number of postings per month. Tables t23 and t24 give the same by month and ISCO-08 major group.</p>" if fig["f07"] else ""}
     <h2>2. Green vacancies by occupation and industry</h2>
     <div class="fig">{fig['f01_green_by_isco_major']}</div>
     <p>Occupation coding coverage and ambiguity:</p>{table_html(t2)}
@@ -64,7 +70,7 @@ def main():
     <h2>4. Skills requirements in green versus non-green vacancies</h2>
     <div class="fig">{fig['f04_skills_green_vs_nongreen']}</div>
     <h2>5. Posted wages</h2>
-    <p>Posted annual wages (USD, {s['n_with_wage']:,} vacancies with a salary field). No deflation is needed for a one-month snapshot; the code applies a CPI deflator when several months are present.</p>
+    <p>Posted annual wages ({cur}, {s['n_with_wage']:,} vacancies with a salary field, midpoint of the posted range, annualised). Nominal values; over a period of a few months deflation changes nothing material, and the code has a hook for a CPI deflator when the series is longer.</p>
     {table_html(t16)}
     <div class="fig">{fig['f05_wages_by_isco_major']}</div>
     <h2>6. Candidate occupation-specific technical green skills</h2>
@@ -74,8 +80,8 @@ def main():
     {"<p>Context check of the most frequent green terms (share of sampled occurrences used in a green sense; terms below 75% are handled through the exception list):</p>" + table_html(tv) if tv is not None else ""}
     {"<p>Boilerplate sensitivity: company text repeated across many postings can inflate green matches. Results with repeated sentences removed:</p>" + table_html(tb) if tb is not None else ""}
     <h2>8. Reproduce</h2>
-    <p>Clone the repository, download the Kaggle dataset into <code>data/</code>, install <code>requirements.txt</code> and run the numbered scripts in <code>src/</code> in order. Every intermediate file, threshold and rule is set in <code>config.yaml</code>; the README is written as an implementation guide for a national institution.</p>
-    <footer>Dictionaries © International Labour Organization 2025, reproduced from the ILO Research Briefs under CC BY 4.0. Vacancy data: Kaggle "LinkedIn Job Postings (2023–2024)", CC BY-SA 4.0. Code: MIT. This is an independent exercise and does not represent the views of the ILO or of the author's employers.</footer>
+    <p>Clone the repository, download the vacancy dataset into <code>data/</code>, install <code>requirements.txt</code> and run the numbered scripts in <code>src/</code> in order. Every intermediate file, threshold and rule is set in <code>config.yaml</code>; the README is written as an implementation guide for a national institution.</p>
+    <footer>Dictionaries © International Labour Organization 2025, reproduced from the ILO Research Briefs under CC BY 4.0. Vacancy data: {html.escape(cp.get('name', ''))}, {html.escape(cp.get('licence', ''))}. Code: MIT. This is an independent exercise and does not represent the views of the ILO or of the author's employers.</footer>
     </body></html>"""]
     (D / "index.html").write_text("\n".join(parts), encoding="utf-8")
     print("wrote", D / "index.html")

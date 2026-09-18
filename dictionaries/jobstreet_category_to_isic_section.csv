@@ -1,0 +1,31 @@
+category,isic_section,isic_section_label,note
+Accounting,M,"Professional, scientific and technical activities","occupational category; approximate"
+Engineering,M,"Professional, scientific and technical activities","occupational category; approximate"
+Information & Communication Technology,J,Information and communication,
+Administration & Office Support,N,Administrative and support service activities,"occupational category; approximate"
+Sales,G,"Wholesale and retail trade; repair of motor vehicles","occupational category; approximate"
+"Manufacturing, Transport & Logistics",C,Manufacturing,"mixed C/H; assigned to C"
+Human Resources & Recruitment,N,Administrative and support service activities,
+Marketing & Communications,M,"Professional, scientific and technical activities",
+Banking & Financial Services,K,Financial and insurance activities,
+Call Centre & Customer Service,N,Administrative and support service activities,
+Construction,F,Construction,
+Retail & Consumer Products,G,"Wholesale and retail trade; repair of motor vehicles",
+Design & Architecture,M,"Professional, scientific and technical activities",
+Healthcare & Medical,Q,Human health and social work activities,
+Hospitality & Tourism,I,Accommodation and food service activities,
+Education & Training,P,Education,
+Real Estate & Property,L,Real estate activities,
+Science & Technology,M,"Professional, scientific and technical activities",
+Trades & Services,S,Other service activities,
+"Advertising, Arts & Media",J,Information and communication,
+Legal,M,"Professional, scientific and technical activities",
+Consulting & Strategy,M,"Professional, scientific and technical activities",
+Insurance & Superannuation,K,Financial and insurance activities,
+CEO & General Management,M,"Professional, scientific and technical activities","occupational category; approximate"
+"Mining, Resources & Energy",B,Mining and quarrying,"mixed B/D; assigned to B"
+"Farming, Animals & Conservation",A,"Agriculture, forestry and fishing",
+Community Services & Development,Q,Human health and social work activities,
+Sport & Recreation,R,"Arts, entertainment and recreation",
+Government & Defence,O,Public administration and defence,
+Self Employment,S,Other service activities,

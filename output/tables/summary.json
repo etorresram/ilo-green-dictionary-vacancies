@@ -5,5 +5,6 @@
   "mean_green_share_among_green": 0.12250373869128045,
   "median_wage_green": 83200.0,
   "median_wage_nongreen": 82500.0,
-  "n_with_wage": 33801
+  "n_with_wage": 33801,
+  "n_months": 2
 }

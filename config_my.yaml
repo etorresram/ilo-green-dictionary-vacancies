@@ -1,0 +1,44 @@
+# Second corpus: JobStreet Malaysia (Hugging Face azrai99/job-dataset). All paths relative to the repo root.
+corpus:
+  key: my_jobstreet
+  name: JobStreet job postings, Malaysia, 2023-2024 (Hugging Face, azrai99/job-dataset)
+  short: Malaysia (JobStreet, Hugging Face)
+  source_url: https://huggingface.co/datasets/azrai99/job-dataset
+  licence: Apache 2.0 (dataset card); scraped from JobStreet
+  currency: MYR
+  n_months_note: February to June 2024 used for the monthly series (earlier months have too few postings)
+data:
+  postings_parquet: ../data/jobstreet_my/jobstreet_my.parquet
+  work_dir: ../data/work_my
+dictionaries:
+  green: dictionaries/green_dictionary_ilo_2025.csv
+  skills: dictionaries/skills_taxonomy_ilo_2025.csv
+  exceptions: dictionaries/exceptions_en_us.csv     # reused from the US corpus; a Malaysia-specific context check is pending
+  industry_map: dictionaries/jobstreet_category_to_isic_section.csv
+crosswalks:
+  onet_titles: crosswalks/onet_occupation_data.txt
+  onet_alt_titles: crosswalks/onet_alternate_titles.txt
+  soc2010_to_2018: crosswalks/bls_soc2010_to_soc2018.xlsx
+  isco08_to_soc2010: crosswalks/bls_isco08_to_soc2010.xls
+  isco08_structure: crosswalks/isco08_structure.xlsx
+text:
+  fields: [title, description]
+  max_ngram: 5
+  spacy_model: en_core_web_sm
+  n_process: 4
+  batch_size: 200
+salary:
+  hours_per_year: 2080
+  weeks_per_year: 52
+  min_annual: 12000      # MYR; below the statutory minimum wage x 12 is treated as a data error
+  max_annual: 1200000
+validation:
+  sample_size: 200
+  context_terms_min_matches: 40
+  context_window: 8
+  precision_threshold: 0.75
+output:
+  tables: output_my/tables
+  figures: output_my/figures
+  site: docs/malaysia
+seed: 20260918
