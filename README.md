@@ -9,6 +9,11 @@ would rerun it on its own data.
 **Results page:** https://etorresram.github.io/ilo-green-dictionary-vacancies/  
 **Author:** Eric Torres Ramírez · **Status:** demonstration, September 2026
 
+**Headline results on this corpus (illustrative):** 13.6% of postings mention at least one green task
+(4.3% darker green); occupation coding reaches 82.7% of postings; the context check excluded 15 dictionary
+terms with below 75% green-sense precision in this corpus; removing corporate boilerplate lowers the green
+share from 13.6% to 12.0%.
+
 > The corpus is a one-month snapshot of vacancies from one country and one platform. It cannot
 > show trends over time nor compare demand (vacancies) with supply (applicants' profiles). The
 > skills variables use the *selected* keywords published by the ILO, not the full taxonomy. Every
@@ -107,7 +112,8 @@ hiding it in a choice.
 term; a reviewer marks each as green-sense or not, and terms below 75% are handled through
 `dictionaries/exceptions_en_us.csv` (drop the term, or drop the match when a context pattern is
 present). `validation/vacancy_sample_for_hand_coding.csv` is a stratified blind sample for
-precision and recall by domain. `05b` measures how much of the green signal comes from corporate
+precision and recall by domain (generated locally by step 05 and not committed, because it contains
+full posting texts). `05b` measures how much of the green signal comes from corporate
 boilerplate repeated across postings, a source of false positives that grows with the size of
 large advertisers.
 

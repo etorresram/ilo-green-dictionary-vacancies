@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+validation/vacancy_sample_for_hand_coding.csv
