@@ -1,4 +1,12 @@
 # All paths are relative to the repository root.
+corpus:
+  key: us_linkedin
+  name: LinkedIn job postings, United States, 2024 (Kaggle)
+  short: United States (LinkedIn, Kaggle)
+  source_url: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings
+  licence: CC BY-SA 4.0
+  currency: USD
+  n_months_note: one-month snapshot (April 2024)
 data:
   postings_csv: ../data/linkedin_2023_2024/postings.csv
   job_industries_csv: ../data/linkedin_2023_2024/jobs/job_industries.csv

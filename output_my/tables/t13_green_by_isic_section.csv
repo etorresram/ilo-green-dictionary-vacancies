@@ -1,0 +1,13 @@
+isic_section,isic_section_label,n,green_share,darker_share,mean_intensity
+F,Construction,1246,0.1453,0.0594,2.1736279301767705
+M,"Professional, scientific and technical activities",21119,0.1262,0.0481,2.045741631322864
+L,Real estate activities,537,0.1229,0.0112,0.9911334632537109
+C,Manufacturing,4040,0.1131,0.0339,1.2101026994331674
+S,Other service activities,372,0.1075,0.0215,1.2176884198814268
+K,Financial and insurance activities,2335,0.0638,0.0137,0.6495416175513015
+J,Information and communication,7748,0.0635,0.0093,0.4406371898520031
+Q,Human health and social work activities,663,0.0633,0.0045,0.39055752023417195
+G,Wholesale and retail trade; repair of motor vehicles,5466,0.0587,0.008,0.6209129283575675
+N,Administrative and support service activities,10923,0.0504,0.0203,0.5943301296816843
+I,Accommodation and food service activities,593,0.0455,0.0152,0.42843076992435564
+P,Education,564,0.0266,0.0,0.1478580977706988

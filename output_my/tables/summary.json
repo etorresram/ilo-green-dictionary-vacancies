@@ -1,0 +1,10 @@
+{
+  "n_postings": 55825,
+  "green_share": 0.09101656963725929,
+  "darker_share": 0.029789520824003584,
+  "mean_green_share_among_green": 0.1808672385171985,
+  "median_wage_green": 51000.0,
+  "median_wage_nongreen": 45000.0,
+  "n_with_wage": 23177,
+  "n_months": 6
+}

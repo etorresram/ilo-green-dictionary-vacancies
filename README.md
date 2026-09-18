@@ -6,7 +6,8 @@ corpus of job postings. It is written as an **implementation guide**: every step
 done, why, which choice is the ILO's and which is an adaptation, and how a national institution
 would rerun it on its own data.
 
-**Results page:** https://etorresram.github.io/ilo-green-dictionary-vacancies/  
+**Results pages:** United States (LinkedIn, Kaggle): https://etorresram.github.io/ilo-green-dictionary-vacancies/ ·
+Malaysia (JobStreet, Hugging Face): https://etorresram.github.io/ilo-green-dictionary-vacancies/malaysia/  
 **Author:** Eric Torres Ramírez · **Status:** demonstration, September 2026
 
 **Headline results on this corpus (illustrative):** 13.6% of postings mention at least one green task
@@ -14,10 +15,11 @@ would rerun it on its own data.
 terms with below 75% green-sense precision in this corpus; removing corporate boilerplate lowers the green
 share from 13.6% to 12.0%.
 
-> The corpus is a one-month snapshot of vacancies from one country and one platform. It cannot
-> show trends over time nor compare demand (vacancies) with supply (applicants' profiles). The
-> skills variables use the *selected* keywords published by the ILO, not the full taxonomy. Every
-> number here illustrates the workflow; none is an estimate of a labour market.
+> Two public corpora are used: a one-month snapshot of US LinkedIn postings (111k) and a five-month
+> series of JobStreet postings from Malaysia (59k), an ASEAN member state. Neither includes applicants'
+> profiles, so demand cannot be compared with supply. The skills variables use the *selected* keywords
+> published by the ILO, not the full taxonomy. Every number here illustrates the workflow; none is an
+> estimate of a labour market.
 
 ## Methodology being implemented
 
@@ -30,10 +32,12 @@ share from 13.6% to 12.0%.
 ## Repository layout
 
 ```
-config.yaml                 every path, threshold and rule
+config.yaml                 every path, threshold and rule (US corpus); config_my.yaml for the Malaysia corpus
+                            (select with the CONFIG environment variable, e.g. CONFIG=config_my.yaml python src/03_...)
 dictionaries/               ILO dictionaries transcribed from the briefs, exception list, industry map
 crosswalks/                 O*NET, BLS and ILO classification files (public)
-src/01_prepare_data.py      duplicates, wages, industry -> ISIC section
+src/01_prepare_data.py      duplicates, wages, industry -> ISIC section (US corpus)
+src/01_prepare_data_jobstreet.py       same for the Malaysia corpus (salary strings in MYR, JobStreet categories)
 src/02_preprocess_text.py   tokenise, normalise, stop words, lemmatise (slow; cached)
 src/03_green_and_skills_variables.py   dictionary matching, green share, shade
 src/04_occupation_mapping.py           title -> ISCO-08 with explicit assignment rule
@@ -66,6 +70,10 @@ python src/06b_validation_metrics.py      # after the blind sample has been code
 python src/07_technical_green_skills.py
 python src/08_build_site.py
 ```
+
+For the Malaysia corpus, download `https://huggingface.co/api/datasets/azrai99/job-dataset/parquet/default/train/0.parquet`
+to `../data/jobstreet_my/jobstreet_my.parquet`, then run the same steps with `CONFIG=config_my.yaml`
+(step 01 becomes `01_prepare_data_jobstreet.py`). Outputs go to `output_my/` and `docs/malaysia/`.
 
 Everything after step 02 runs in minutes, so dictionaries, exception rules and thresholds can be
 revised and re-run cheaply. To apply the pipeline to another corpus, change the `data:` block in
@@ -124,10 +132,11 @@ boilerplate repeated across postings, a source of false positives that grows wit
 large advertisers.
 
 ### 6. Outputs
-`output/tables` contains every table behind the results page (`t10`–`t21`), `output/figures`
-the PNG and interactive HTML figures, and `docs/index.html` the page. Items in the ILO ToR that
-need a time series or applicants' data are not produced; the functions accept a month key and a
-supply-side file so that they can be switched on when the data exist.
+`output/tables` contains every table behind the results page (`t10`–`t24`), `output/figures`
+the PNG and interactive HTML figures, and `docs/index.html` the page (`output_my/` and
+`docs/malaysia/` for the second corpus). The monthly series (green share by month, and by month and
+ISCO-08 major group) is produced automatically when a corpus has at least two months with 500 or
+more postings, as the Malaysia corpus does. Items that need applicants' data are not produced.
 
 ## Adapting to another country (checklist)
 1. Map national occupation and industry codes to ISCO-08 and ISIC Rev. 4 with the official tables;
