@@ -1,0 +1,39 @@
+dictionary,term,rule,pattern,reason,evidence
+green,ecosystem,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,ecosystems,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,remediation,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,organic,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,six sigma,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,lean manufacturing,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,forest,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,contaminate,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,contaminants,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,contaminated site,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,bike,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,greenfield,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,fire protection,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,reuse,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,regenerative,drop_term,,below 75% green sense in the context check,validation/context_check_results.csv
+green,environmental,drop_if_context,physical demands,job-conditions or hospital sense,validation/context_check_results.csv
+green,environmental,drop_if_context,environmental demands,job-conditions or hospital sense,validation/context_check_results.csv
+green,environmental,drop_if_context,environmental factors,job-conditions or hospital sense,validation/context_check_results.csv
+green,environmental,drop_if_context,environmental profile,job-conditions or hospital sense,validation/context_check_results.csv
+green,environmental,drop_if_context,clerical environmental,job-conditions or hospital sense,validation/context_check_results.csv
+green,environmental,drop_if_context,environmental changes,job-conditions or hospital sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable growth,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable business,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable results,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable outcome,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable outcomes,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable employment,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable security,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable success,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable operations,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable revenue,business-jargon sense,validation/context_check_results.csv
+green,sustainable,drop_if_context,sustainable relationships,business-jargon sense,validation/context_check_results.csv
+green,pv,drop_if_context,pharmacovigilance,pharmacovigilance abbreviation,validation/context_check_results.csv
+green,natural environment,drop_if_context,natural environment training,behavioural-therapy sense,validation/context_check_results.csv
+green,water management,drop_if_context,foundation repair,basement waterproofing companies,validation/context_check_results.csv
+green,waste reduction,drop_if_context,continuous improvement,lean-manufacturing sense,validation/context_check_results.csv
+green,waste reduction,drop_if_context,cost control,lean-manufacturing sense,validation/context_check_results.csv
+green,waste reduction,drop_if_context,cost reduction,lean-manufacturing sense,validation/context_check_results.csv

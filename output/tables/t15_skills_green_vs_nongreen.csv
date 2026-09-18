@@ -1,0 +1,16 @@
+code,category,subcategory,green,non_green,darker_green,diff_pp
+S01,Cognitive,Cognitive skills (core),0.8229,0.6924,0.7262,13.0556
+S02,Cognitive,Cognitive skills (sophisticated),0.4322,0.3551,0.3707,7.716
+S03,Cognitive,Computer (general) skills,0.476,0.4049,0.3701,7.1074
+S04,Cognitive,Software (specific) skills and technical support,0.0869,0.1187,0.0602,-3.1847
+S05,Cognitive,Machine learning and artificial intelligence,0.0783,0.0653,0.0535,1.3004
+S06,Cognitive,Financial skills,0.4116,0.291,0.335,12.061
+S07,Cognitive,Writing skills,0.6804,0.5269,0.5996,15.3468
+S08,Cognitive,Project and process management skills,0.1599,0.0977,0.133,6.2177
+S09,Socio-emotional,Character skills,0.6468,0.5488,0.5643,9.7982
+S10,Socio-emotional,Social skills,0.9272,0.8671,0.8684,6.0091
+S11,Socio-emotional,People management skills,0.3988,0.3078,0.312,9.0981
+S12,Socio-emotional,Customer service skills,0.8098,0.7719,0.717,3.79
+S13,Manual,Finger dexterity skills,0.4368,0.2304,0.429,20.639
+S14,Manual,Hand-foot-eye coordination skills,0.7538,0.5694,0.6744,18.4425
+S15,Manual,Physical skills,0.1568,0.112,0.1316,4.4818

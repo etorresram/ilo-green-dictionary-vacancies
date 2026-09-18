@@ -1,0 +1,8 @@
+metric,n,share
+postings,111132,1.0
+matched to O*NET-SOC (exact),39762,0.358
+matched (exact after stripping modifiers),11648,0.105
+"matched (fuzzy >= 90, same head noun)",5277,0.047
+"matched (keyword rule, lowest confidence)",35946,0.323
+with an ISCO-08 code,91929,0.827
+with more than one admissible ISCO-08 code,33495,0.301

@@ -1,0 +1,9 @@
+isco08_major,isco08_major_label,median_wage_green,median_wage_non_green,n_green,n_non_green,premium_pct
+1,Managers,114500.0,107500.0,909.0,5502.0,6.5
+2,Professionals,102500.0,108160.0,1291.0,9843.0,-5.2
+3,Technicians and Associate Professionals,70250.0,65520.0,606.0,4888.0,7.2
+4,Clerical Support Workers,57200.0,50000.0,199.0,1862.0,14.4
+5,Service and Sales Workers,42484.0,39520.0,129.0,1162.0,7.5
+7,Craft and Related Trades Workers,63440.0,60000.0,237.0,686.0,5.7
+8,"Plant and Machine Operators, and Assemblers",51012.0,45760.0,167.0,401.0,11.5
+9,Elementary Occupations,43680.0,41600.0,168.0,666.0,5.0

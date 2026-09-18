@@ -1,0 +1,536 @@
+domain_code,domain,term
+G01,Alternative Energy Systems,alternative energy
+G01,Alternative Energy Systems,alternate fuel
+G01,Alternative Energy Systems,biodiesel
+G01,Alternative Energy Systems,bioenergy
+G01,Alternative Energy Systems,biofuel
+G01,Alternative Energy Systems,biological fuel
+G01,Alternative Energy Systems,biogas
+G01,Alternative Energy Systems,biomass
+G01,Alternative Energy Systems,biodigester
+G01,Alternative Energy Systems,clean energy
+G01,Alternative Energy Systems,clean technologies
+G01,Alternative Energy Systems,desalination
+G01,Alternative Energy Systems,electrolysis
+G01,Alternative Energy Systems,efuel
+G01,Alternative Energy Systems,electrofuel
+G01,Alternative Energy Systems,ekerosene
+G01,Alternative Energy Systems,emethane
+G01,Alternative Energy Systems,ethanol
+G01,Alternative Energy Systems,ethanol emissions
+G01,Alternative Energy Systems,ethanol footprint
+G01,Alternative Energy Systems,ethanol management
+G01,Alternative Energy Systems,ethanol offset
+G01,Alternative Energy Systems,ethanol reduction
+G01,Alternative Energy Systems,fuel cell
+G01,Alternative Energy Systems,geothermal
+G01,Alternative Energy Systems,green energy
+G01,Alternative Energy Systems,hybrid power
+G01,Alternative Energy Systems,hydroelectric
+G01,Alternative Energy Systems,hydrogeology
+G01,Alternative Energy Systems,hydropower
+G01,Alternative Energy Systems,green hydrogen
+G01,Alternative Energy Systems,blue hydrogen
+G01,Alternative Energy Systems,hydrogen fuel
+G01,Alternative Energy Systems,nuclear energy
+G01,Alternative Energy Systems,nuclear fuel
+G01,Alternative Energy Systems,nuclear power
+G01,Alternative Energy Systems,nuclear fusion
+G01,Alternative Energy Systems,photovoltaic
+G01,Alternative Energy Systems,pv
+G01,Alternative Energy Systems,renewable energy
+G01,Alternative Energy Systems,renewable source
+G01,Alternative Energy Systems,solar
+G01,Alternative Energy Systems,solar energy
+G01,Alternative Energy Systems,solar photovoltaic
+G01,Alternative Energy Systems,solar thermal
+G01,Alternative Energy Systems,solar power
+G01,Alternative Energy Systems,solar panels
+G01,Alternative Energy Systems,solar water
+G01,Alternative Energy Systems,solar heating
+G01,Alternative Energy Systems,ocean power
+G01,Alternative Energy Systems,ocean energy
+G01,Alternative Energy Systems,marine power
+G01,Alternative Energy Systems,marine energy
+G01,Alternative Energy Systems,tidal power
+G01,Alternative Energy Systems,tidal energy
+G01,Alternative Energy Systems,offshore power
+G01,Alternative Energy Systems,offshore energy
+G01,Alternative Energy Systems,offshore wind
+G01,Alternative Energy Systems,osmotic power
+G01,Alternative Energy Systems,osmotic energy
+G01,Alternative Energy Systems,waste energy
+G01,Alternative Energy Systems,wind assessment
+G01,Alternative Energy Systems,wind energy
+G01,Alternative Energy Systems,wind farm
+G01,Alternative Energy Systems,wind field
+G01,Alternative Energy Systems,wind operation
+G01,Alternative Energy Systems,wind power
+G01,Alternative Energy Systems,wind project
+G01,Alternative Energy Systems,wind system
+G01,Alternative Energy Systems,wind technology
+G01,Alternative Energy Systems,wind turbine
+G01,Alternative Energy Systems,windmill
+G02,Energy Efficiency and Consumption,cogeneration
+G02,Energy Efficiency and Consumption,detect hot spots
+G02,Energy Efficiency and Consumption,efficiency heat
+G02,Energy Efficiency and Consumption,improve heat
+G02,Energy Efficiency and Consumption,efficiency light
+G02,Energy Efficiency and Consumption,efficiency retrofitting
+G02,Energy Efficiency and Consumption,efficient heat
+G02,Energy Efficiency and Consumption,efficient light
+G02,Energy Efficiency and Consumption,energy advise
+G02,Energy Efficiency and Consumption,energy audit
+G02,Energy Efficiency and Consumption,energy conservation
+G02,Energy Efficiency and Consumption,energy label
+G02,Energy Efficiency and Consumption,energy efficiency
+G02,Energy Efficiency and Consumption,energy efficient
+G02,Energy Efficiency and Consumption,improve energy
+G02,Energy Efficiency and Consumption,energy loss
+G02,Energy Efficiency and Consumption,energy management
+G02,Energy Efficiency and Consumption,energy reduction
+G02,Energy Efficiency and Consumption,energy saving
+G02,Energy Efficiency and Consumption,equipment effectiveness
+G02,Energy Efficiency and Consumption,equipment efficiency
+G02,Energy Efficiency and Consumption,fuel economy
+G02,Energy Efficiency and Consumption,fuel efficiency
+G02,Energy Efficiency and Consumption,insulation
+G02,Energy Efficiency and Consumption,climate proofing
+G02,Energy Efficiency and Consumption,lean manufacturing
+G02,Energy Efficiency and Consumption,led bulb
+G02,Energy Efficiency and Consumption,led light
+G02,Energy Efficiency and Consumption,li ion
+G02,Energy Efficiency and Consumption,lithium
+G02,Energy Efficiency and Consumption,lithium ion battery
+G02,Energy Efficiency and Consumption,solid state battery
+G02,Energy Efficiency and Consumption,sulfur battery
+G02,Energy Efficiency and Consumption,sodium battery
+G02,Energy Efficiency and Consumption,zinc battery
+G02,Energy Efficiency and Consumption,material efficiency
+G02,Energy Efficiency and Consumption,minimize energy
+G02,Energy Efficiency and Consumption,minimize electric energy
+G02,Energy Efficiency and Consumption,passive house
+G02,Energy Efficiency and Consumption,programmable thermostat
+G02,Energy Efficiency and Consumption,reduce energy
+G02,Energy Efficiency and Consumption,reduce electricity
+G02,Energy Efficiency and Consumption,saving energy
+G02,Energy Efficiency and Consumption,smart grid
+G02,Energy Efficiency and Consumption,smart home
+G02,Energy Efficiency and Consumption,smart power grid
+G02,Energy Efficiency and Consumption,energy grid integration
+G02,Energy Efficiency and Consumption,renewable grid integration
+G02,Energy Efficiency and Consumption,use efficiency
+G02,Energy Efficiency and Consumption,weatherization
+G02,Energy Efficiency and Consumption,energy storage
+G02,Energy Efficiency and Consumption,measure energy use
+G02,Energy Efficiency and Consumption,power storage
+G02,Energy Efficiency and Consumption,pressure losses
+G03,Sustainable Building and Construction,green building
+G03,Sustainable Building and Construction,net zero building
+G03,Sustainable Building and Construction,low carbon building
+G03,Sustainable Building and Construction,zero energy building
+G03,Sustainable Building and Construction,green cement
+G03,Sustainable Building and Construction,low carbon cement
+G03,Sustainable Building and Construction,low carbon construction
+G03,Sustainable Building and Construction,green steel
+G03,Sustainable Building and Construction,sustainable architecture
+G03,Sustainable Building and Construction,sustainable design
+G03,Sustainable Building and Construction,sustainable materials
+G03,Sustainable Building and Construction,compressed earth blocks
+G03,Sustainable Building and Construction,urban greening
+G03,Sustainable Building and Construction,green infrastructure
+G03,Sustainable Building and Construction,nature based infrastructure
+G03,Sustainable Building and Construction,sustainable infrastructure
+G03,Sustainable Building and Construction,natural infrastructure
+G03,Sustainable Building and Construction,smart building
+G03,Sustainable Building and Construction,sustainable construction
+G03,Sustainable Building and Construction,ecofriendly construction
+G03,Sustainable Building and Construction,green urban planning
+G04,"Emissions, Pollution, and Sustainable Transportation",air emissions
+G04,"Emissions, Pollution, and Sustainable Transportation",air quality
+G04,"Emissions, Pollution, and Sustainable Transportation",air sampling
+G04,"Emissions, Pollution, and Sustainable Transportation",blower door
+G04,"Emissions, Pollution, and Sustainable Transportation",brownfield
+G04,"Emissions, Pollution, and Sustainable Transportation",capture use gases
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon capture
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon credit
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon dioxide
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon emissions
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon footprint
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon offset
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon output
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon reduction
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon sequestration
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon disclosure
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon tax
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon market
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon pricing
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon standard
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon reporting
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon inventory
+G04,"Emissions, Pollution, and Sustainable Transportation",cbam
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon border
+G04,"Emissions, Pollution, and Sustainable Transportation",carbon neutral
+G04,"Emissions, Pollution, and Sustainable Transportation",ipcc guidelines
+G04,"Emissions, Pollution, and Sustainable Transportation",ipcc inventory
+G04,"Emissions, Pollution, and Sustainable Transportation",clean spills
+G04,"Emissions, Pollution, and Sustainable Transportation",contaminate
+G04,"Emissions, Pollution, and Sustainable Transportation",contaminants
+G04,"Emissions, Pollution, and Sustainable Transportation",decontaminate
+G04,"Emissions, Pollution, and Sustainable Transportation",decontaminants
+G04,"Emissions, Pollution, and Sustainable Transportation",contaminated site
+G04,"Emissions, Pollution, and Sustainable Transportation",decarbon
+G04,"Emissions, Pollution, and Sustainable Transportation",deodorize water
+G04,"Emissions, Pollution, and Sustainable Transportation",dust dispersion
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions analysis
+G04,"Emissions, Pollution, and Sustainable Transportation",emission control
+G04,"Emissions, Pollution, and Sustainable Transportation",emission reduction
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions control
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions inspection
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions monitoring
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions reduction
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions standards
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions trade
+G04,"Emissions, Pollution, and Sustainable Transportation",net zero asset
+G04,"Emissions, Pollution, and Sustainable Transportation",net zero emissions
+G04,"Emissions, Pollution, and Sustainable Transportation",vehicle emissions
+G04,"Emissions, Pollution, and Sustainable Transportation",emissions testing
+G04,"Emissions, Pollution, and Sustainable Transportation",ghg
+G04,"Emissions, Pollution, and Sustainable Transportation",greenhouse gas
+G04,"Emissions, Pollution, and Sustainable Transportation",greenhouse effect
+G04,"Emissions, Pollution, and Sustainable Transportation",groundwater protection
+G04,"Emissions, Pollution, and Sustainable Transportation",harmful emission
+G04,"Emissions, Pollution, and Sustainable Transportation",hazard analysis
+G04,"Emissions, Pollution, and Sustainable Transportation",hazardous substances
+G04,"Emissions, Pollution, and Sustainable Transportation",hazardous waste
+G04,"Emissions, Pollution, and Sustainable Transportation",hazmat
+G04,"Emissions, Pollution, and Sustainable Transportation",hazwoper
+G04,"Emissions, Pollution, and Sustainable Transportation",hazardous waste operations emergency response
+G04,"Emissions, Pollution, and Sustainable Transportation",highway barrier
+G04,"Emissions, Pollution, and Sustainable Transportation",landfill gas
+G04,"Emissions, Pollution, and Sustainable Transportation",monitor landfill
+G04,"Emissions, Pollution, and Sustainable Transportation",gas landfill
+G04,"Emissions, Pollution, and Sustainable Transportation",leachate
+G04,"Emissions, Pollution, and Sustainable Transportation",low carbon
+G04,"Emissions, Pollution, and Sustainable Transportation",measure emission
+G04,"Emissions, Pollution, and Sustainable Transportation",methane
+G04,"Emissions, Pollution, and Sustainable Transportation",methane emissions
+G04,"Emissions, Pollution, and Sustainable Transportation",methane footprint
+G04,"Emissions, Pollution, and Sustainable Transportation",methane management
+G04,"Emissions, Pollution, and Sustainable Transportation",methane offset
+G04,"Emissions, Pollution, and Sustainable Transportation",methane reduction
+G04,"Emissions, Pollution, and Sustainable Transportation",noise control
+G04,"Emissions, Pollution, and Sustainable Transportation",noise dead
+G04,"Emissions, Pollution, and Sustainable Transportation",noise protection
+G04,"Emissions, Pollution, and Sustainable Transportation",odour control
+G04,"Emissions, Pollution, and Sustainable Transportation",ozone
+G04,"Emissions, Pollution, and Sustainable Transportation",pollution
+G04,"Emissions, Pollution, and Sustainable Transportation",radioactive containment
+G04,"Emissions, Pollution, and Sustainable Transportation",radioactive waste
+G04,"Emissions, Pollution, and Sustainable Transportation",reduce carbon
+G04,"Emissions, Pollution, and Sustainable Transportation",reduce toxic
+G04,"Emissions, Pollution, and Sustainable Transportation",sewage
+G04,"Emissions, Pollution, and Sustainable Transportation",soil erosion
+G04,"Emissions, Pollution, and Sustainable Transportation",soil protection
+G04,"Emissions, Pollution, and Sustainable Transportation",soil quality
+G04,"Emissions, Pollution, and Sustainable Transportation",soil sampling
+G04,"Emissions, Pollution, and Sustainable Transportation",soil test
+G04,"Emissions, Pollution, and Sustainable Transportation",soil report
+G04,"Emissions, Pollution, and Sustainable Transportation",test air
+G04,"Emissions, Pollution, and Sustainable Transportation",testing air
+G04,"Emissions, Pollution, and Sustainable Transportation",testing water
+G04,"Emissions, Pollution, and Sustainable Transportation",tests soils
+G04,"Emissions, Pollution, and Sustainable Transportation",toxic waste
+G04,"Emissions, Pollution, and Sustainable Transportation",vibration control
+G04,"Emissions, Pollution, and Sustainable Transportation",waste clean
+G04,"Emissions, Pollution, and Sustainable Transportation",waste water
+G04,"Emissions, Pollution, and Sustainable Transportation",wastewater
+G04,"Emissions, Pollution, and Sustainable Transportation",water quality
+G04,"Emissions, Pollution, and Sustainable Transportation",water sample
+G04,"Emissions, Pollution, and Sustainable Transportation",water testing
+G04,"Emissions, Pollution, and Sustainable Transportation",water treatment
+G04,"Emissions, Pollution, and Sustainable Transportation",bicycle
+G04,"Emissions, Pollution, and Sustainable Transportation",bike
+G04,"Emissions, Pollution, and Sustainable Transportation",eco mobility
+G04,"Emissions, Pollution, and Sustainable Transportation",ecomobility
+G04,"Emissions, Pollution, and Sustainable Transportation",electric car
+G04,"Emissions, Pollution, and Sustainable Transportation",electric drive
+G04,"Emissions, Pollution, and Sustainable Transportation",electric aviation
+G04,"Emissions, Pollution, and Sustainable Transportation",electric flying
+G04,"Emissions, Pollution, and Sustainable Transportation",electromobility
+G04,"Emissions, Pollution, and Sustainable Transportation",hybrid vehicle
+G04,"Emissions, Pollution, and Sustainable Transportation",hybrid electric
+G04,"Emissions, Pollution, and Sustainable Transportation",hybrid car
+G04,"Emissions, Pollution, and Sustainable Transportation",new energy vehicle
+G04,"Emissions, Pollution, and Sustainable Transportation",hydrogen aviation
+G04,"Emissions, Pollution, and Sustainable Transportation",hydrogen propulsion
+G04,"Emissions, Pollution, and Sustainable Transportation",maximize vehicle use
+G04,"Emissions, Pollution, and Sustainable Transportation",electric vehicles
+G04,"Emissions, Pollution, and Sustainable Transportation",transportation efficiency
+G04,"Emissions, Pollution, and Sustainable Transportation",sustainable aviation
+G05,Recycling and Waste Management,biodegradable
+G05,Recycling and Waste Management,biodegradation
+G05,Recycling and Waste Management,circular economy
+G05,Recycling and Waste Management,greening economy
+G05,Recycling and Waste Management,composting
+G05,Recycling and Waste Management,durability
+G05,Recycling and Waste Management,litter control
+G05,Recycling and Waste Management,recycling
+G05,Recycling and Waste Management,recycle
+G05,Recycling and Waste Management,recyclable
+G05,Recycling and Waste Management,reclaim steel
+G05,Recycling and Waste Management,refrigerant reclaiming
+G05,Recycling and Waste Management,reduce waste
+G05,Recycling and Waste Management,remanufacturing
+G05,Recycling and Waste Management,renewable material
+G05,Recycling and Waste Management,renewable resource
+G05,Recycling and Waste Management,reuse
+G05,Recycling and Waste Management,waste management
+G05,Recycling and Waste Management,waste reduction
+G05,Recycling and Waste Management,waste treatment
+G05,Recycling and Waste Management,ewaste
+G05,Recycling and Waste Management,plastic removal
+G05,Recycling and Waste Management,plastic footprint
+G05,Recycling and Waste Management,plastic reuse
+G05,Recycling and Waste Management,plastic cleanup
+G05,Recycling and Waste Management,reduce plastic
+G05,Recycling and Waste Management,reduce microplastic
+G05,Recycling and Waste Management,microplastic cleanup
+G05,Recycling and Waste Management,microplastic removal
+G05,Recycling and Waste Management,collect waste
+G05,Recycling and Waste Management,garbage collection
+G05,Recycling and Waste Management,refuse collection
+G05,Recycling and Waste Management,solid waste
+G05,Recycling and Waste Management,hazardous waste
+G05,Recycling and Waste Management,nonhazardous waste
+G05,Recycling and Waste Management,waste recovery
+G05,Recycling and Waste Management,waste grinding
+G05,Recycling and Waste Management,waste shredding
+G05,Recycling and Waste Management,waste crushing
+G05,Recycling and Waste Management,demolition waste
+G05,Recycling and Waste Management,treatment disposal
+G05,Recycling and Waste Management,toxic disposal
+G05,Recycling and Waste Management,compost production
+G05,Recycling and Waste Management,nuclear waste
+G05,Recycling and Waste Management,waste encapsulation
+G05,Recycling and Waste Management,recovery materials
+G05,Recycling and Waste Management,recovery waste
+G05,Recycling and Waste Management,secondary raw material
+G05,Recycling and Waste Management,metal reclaim
+G05,Recycling and Waste Management,collect used oil
+G05,Recycling and Waste Management,collect used fat
+G05,Recycling and Waste Management,disposal used oil
+G05,Recycling and Waste Management,disposal used fat
+G06,"Sustainable Agriculture, Forestry, and Food Production",agronomy
+G06,"Sustainable Agriculture, Forestry, and Food Production",agroecology
+G06,"Sustainable Agriculture, Forestry, and Food Production",agrophenology
+G06,"Sustainable Agriculture, Forestry, and Food Production",biochar
+G06,"Sustainable Agriculture, Forestry, and Food Production",climate smart
+G06,"Sustainable Agriculture, Forestry, and Food Production",drip irrigation
+G06,"Sustainable Agriculture, Forestry, and Food Production",precision irrigation
+G06,"Sustainable Agriculture, Forestry, and Food Production",no till
+G06,"Sustainable Agriculture, Forestry, and Food Production",organic
+G06,"Sustainable Agriculture, Forestry, and Food Production",organic farming
+G06,"Sustainable Agriculture, Forestry, and Food Production",recultivate
+G06,"Sustainable Agriculture, Forestry, and Food Production",regenerative
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable agriculture
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable farming
+G06,"Sustainable Agriculture, Forestry, and Food Production",conservation agriculture
+G06,"Sustainable Agriculture, Forestry, and Food Production",subsistence farm
+G06,"Sustainable Agriculture, Forestry, and Food Production",indigenous agriculture
+G06,"Sustainable Agriculture, Forestry, and Food Production",ipm
+G06,"Sustainable Agriculture, Forestry, and Food Production",integrated pest management
+G06,"Sustainable Agriculture, Forestry, and Food Production",wild plant
+G06,"Sustainable Agriculture, Forestry, and Food Production",forest
+G06,"Sustainable Agriculture, Forestry, and Food Production",foresters
+G06,"Sustainable Agriculture, Forestry, and Food Production",forestry
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable forestry
+G06,"Sustainable Agriculture, Forestry, and Food Production",reforestation
+G06,"Sustainable Agriculture, Forestry, and Food Production",afforestation
+G06,"Sustainable Agriculture, Forestry, and Food Production",forest protection
+G06,"Sustainable Agriculture, Forestry, and Food Production",plant forest
+G06,"Sustainable Agriculture, Forestry, and Food Production",forest maintenance
+G06,"Sustainable Agriculture, Forestry, and Food Production",agro forestry
+G06,"Sustainable Agriculture, Forestry, and Food Production",agroforestry
+G06,"Sustainable Agriculture, Forestry, and Food Production",tree planting
+G06,"Sustainable Agriculture, Forestry, and Food Production",crop diversification
+G06,"Sustainable Agriculture, Forestry, and Food Production",crop rotation
+G06,"Sustainable Agriculture, Forestry, and Food Production",cover crop
+G06,"Sustainable Agriculture, Forestry, and Food Production",shade agriculture
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable horticulture
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable fishing
+G06,"Sustainable Agriculture, Forestry, and Food Production",artisanal fishing
+G06,"Sustainable Agriculture, Forestry, and Food Production",aquaculture
+G06,"Sustainable Agriculture, Forestry, and Food Production",aqua culture
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable livestock
+G06,"Sustainable Agriculture, Forestry, and Food Production",insect protein
+G06,"Sustainable Agriculture, Forestry, and Food Production",sustainable protein
+G06,"Sustainable Agriculture, Forestry, and Food Production",plant based meat
+G06,"Sustainable Agriculture, Forestry, and Food Production",plant based protein
+G06,"Sustainable Agriculture, Forestry, and Food Production",optimal grazing
+G06,"Sustainable Agriculture, Forestry, and Food Production",grazing intensity
+G06,"Sustainable Agriculture, Forestry, and Food Production",green manure
+G06,"Sustainable Agriculture, Forestry, and Food Production",silvoarable
+G06,"Sustainable Agriculture, Forestry, and Food Production",silvopasture
+G06,"Sustainable Agriculture, Forestry, and Food Production",green ammonia
+G07,Natural Resource Conservation,affecting earth
+G07,Natural Resource Conservation,atmospheric
+G07,Natural Resource Conservation,biodiversity
+G07,Natural Resource Conservation,biological diversity
+G07,Natural Resource Conservation,biological hazard
+G07,Natural Resource Conservation,biotope
+G07,Natural Resource Conservation,climate protection
+G07,Natural Resource Conservation,coastal protection
+G07,Natural Resource Conservation,resource conservation
+G07,Natural Resource Conservation,nature conservation
+G07,Natural Resource Conservation,natural conservation
+G07,Natural Resource Conservation,conserve resource
+G07,Natural Resource Conservation,conserve nature
+G07,Natural Resource Conservation,conserve natural
+G07,Natural Resource Conservation,deforestation
+G07,Natural Resource Conservation,drought
+G07,Natural Resource Conservation,eco friendly
+G07,Natural Resource Conservation,ecofriendly
+G07,Natural Resource Conservation,ecology
+G07,Natural Resource Conservation,ecologist
+G07,Natural Resource Conservation,ecological
+G07,Natural Resource Conservation,ecosystem
+G07,Natural Resource Conservation,protecting ecosystems
+G07,Natural Resource Conservation,eco tourism
+G07,Natural Resource Conservation,ecotourism
+G07,Natural Resource Conservation,nature tourism
+G07,Natural Resource Conservation,sustainable tourism
+G07,Natural Resource Conservation,effect weather
+G07,Natural Resource Conservation,environmental assessment
+G07,Natural Resource Conservation,environmental impact
+G07,Natural Resource Conservation,environmental protection
+G07,Natural Resource Conservation,environmental restoration
+G07,Natural Resource Conservation,environmental testing
+G07,Natural Resource Conservation,erosion control
+G07,Natural Resource Conservation,extinguishing fire
+G07,Natural Resource Conservation,fire detection
+G07,Natural Resource Conservation,fire prevention
+G07,Natural Resource Conservation,fire protection
+G07,Natural Resource Conservation,fire suppression
+G07,Natural Resource Conservation,firefight
+G07,Natural Resource Conservation,flood control
+G07,Natural Resource Conservation,floods
+G07,Natural Resource Conservation,forecast weather
+G07,Natural Resource Conservation,weather prediction
+G07,Natural Resource Conservation,greenfield
+G07,Natural Resource Conservation,habitat
+G07,Natural Resource Conservation,natural environment
+G07,Natural Resource Conservation,hazards life
+G07,Natural Resource Conservation,land protection
+G07,Natural Resource Conservation,land restoration
+G07,Natural Resource Conservation,land repurposing
+G07,Natural Resource Conservation,landscape protection
+G07,Natural Resource Conservation,landscape restoration
+G07,Natural Resource Conservation,sustainable land management
+G07,Natural Resource Conservation,desertification
+G07,Natural Resource Conservation,minimize raw material
+G07,Natural Resource Conservation,monitor water
+G07,Natural Resource Conservation,natural garden
+G07,Natural Resource Conservation,natural resource
+G07,Natural Resource Conservation,natural resource management
+G07,Natural Resource Conservation,natural reserve
+G07,Natural Resource Conservation,natural risk
+G07,Natural Resource Conservation,natural risk management
+G07,Natural Resource Conservation,paperless
+G07,Natural Resource Conservation,protect environment
+G07,Natural Resource Conservation,protect water
+G07,Natural Resource Conservation,reduce water
+G07,Natural Resource Conservation,regrow
+G07,Natural Resource Conservation,ground water remediation
+G07,Natural Resource Conservation,environmental remediation
+G07,Natural Resource Conservation,remediation
+G07,Natural Resource Conservation,reduce consumption
+G07,Natural Resource Conservation,renaturation
+G07,Natural Resource Conservation,storm water
+G07,Natural Resource Conservation,stormwater
+G07,Natural Resource Conservation,testing earth
+G07,Natural Resource Conservation,tree care
+G07,Natural Resource Conservation,water conservation
+G07,Natural Resource Conservation,water efficiency
+G07,Natural Resource Conservation,water management
+G07,Natural Resource Conservation,water meter
+G07,Natural Resource Conservation,water monitor
+G07,Natural Resource Conservation,water resource
+G07,Natural Resource Conservation,efficiency water
+G07,Natural Resource Conservation,water saving
+G07,Natural Resource Conservation,wild animal
+G07,Natural Resource Conservation,wild life
+G07,Natural Resource Conservation,wilderness
+G07,Natural Resource Conservation,wildlife
+G07,Natural Resource Conservation,habitat protection
+G07,Natural Resource Conservation,catchment rehabilitation
+G07,Natural Resource Conservation,catchment restoration
+G07,Natural Resource Conservation,wetland management
+G07,Natural Resource Conservation,natural capital
+G07,Natural Resource Conservation,natural heritage
+G07,Natural Resource Conservation,natural systems
+G07,Natural Resource Conservation,nature based enterprise
+G07,Natural Resource Conservation,nature based solution
+G07,Natural Resource Conservation,nature positive
+G07,Natural Resource Conservation,biosphere protection
+G07,Natural Resource Conservation,restoration peatland
+G07,Natural Resource Conservation,restoration mangrove
+G07,Natural Resource Conservation,restoration saltmarsh
+G07,Natural Resource Conservation,restoration seagrass
+G08,Environmental Awareness,climate change
+G08,Environmental Awareness,eco citizenship
+G08,Environmental Awareness,ecocitizenship
+G08,Environmental Awareness,environmental
+G08,Environmental Awareness,global warming
+G08,Environmental Awareness,sustainable
+G08,Environmental Awareness,sustainability
+G08,Environmental Awareness,esg
+G08,Environmental Awareness,environmental social governance
+G08,Environmental Awareness,environmental awareness
+G08,Environmental Awareness,environmental engineer
+G08,Environmental Awareness,environmental knowledge
+G08,Environmental Awareness,environmental science
+G08,Environmental Awareness,environmental scientist
+G08,Environmental Awareness,environmental studies
+G08,Environmental Awareness,soil science
+G08,Environmental Awareness,sustainable production
+G08,Environmental Awareness,responsible production
+G08,Environmental Awareness,conscious consumption
+G08,Environmental Awareness,conscious consumerism
+G08,Environmental Awareness,sustainable consumption
+G08,Environmental Awareness,responsible consumption
+G08,Environmental Awareness,environmental sustainability
+G09,Environmental Certifications and Compliance,leed
+G09,Environmental Certifications and Compliance,ohsas
+G09,Environmental Certifications and Compliance,six sigma
+G09,Environmental Certifications and Compliance,forest stewardship council
+G09,Environmental Certifications and Compliance,msc asc
+G09,Environmental Certifications and Compliance,marine stewardship council
+G09,Environmental Certifications and Compliance,aquaculture stewardship council
+G09,Environmental Certifications and Compliance,eubio
+G09,Environmental Certifications and Compliance,rainforest alliance
+G09,Environmental Certifications and Compliance,energy star
+G09,Environmental Certifications and Compliance,green seal
+G09,Environmental Certifications and Compliance,iscc
+G09,Environmental Certifications and Compliance,international sustainability carbon certification
+G09,Environmental Certifications and Compliance,breeam
+G09,Environmental Certifications and Compliance,green globe
+G09,Environmental Certifications and Compliance,cercla
+G09,Environmental Certifications and Compliance,comprehensive environmental response compensation liability act
+G09,Environmental Certifications and Compliance,environmental auditing
+G09,Environmental Certifications and Compliance,environmental compliance
+G09,Environmental Certifications and Compliance,environmental law
+G09,Environmental Certifications and Compliance,environmental liability
+G09,Environmental Certifications and Compliance,environmental permit
+G09,Environmental Certifications and Compliance,environmental regulation
+G09,Environmental Certifications and Compliance,health environment
+G09,Environmental Certifications and Compliance,green procurement
+G09,Environmental Certifications and Compliance,environmental tax
+G09,Environmental Certifications and Compliance,myclimate
+G09,Environmental Certifications and Compliance,net zero banking
+G09,Environmental Certifications and Compliance,net zero insurance
+G09,Environmental Certifications and Compliance,net zero business
+G09,Environmental Certifications and Compliance,sec climate disclosure
+G09,Environmental Certifications and Compliance,ngfs
+G09,Environmental Certifications and Compliance,network greening financial system
+G09,Environmental Certifications and Compliance,greening financial system

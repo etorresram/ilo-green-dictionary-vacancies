@@ -1,0 +1,6 @@
+indicator,ilo_method,without_boilerplate
+green vacancies (share of all),0.1357,0.1195
+darker green vacancies (share of all),0.0431,0.0378
+green postings containing at least one boilerplate sentence,,0.5672
+green postings that stop being green without boilerplate,,0.1195
+boilerplate sentences identified (>= 20 postings),,10102.0

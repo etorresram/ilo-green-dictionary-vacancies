@@ -1,0 +1,206 @@
+category,subcategory_code,subcategory,term
+Cognitive,S01,Cognitive skills (core),problem solving
+Cognitive,S01,Cognitive skills (core),analytical
+Cognitive,S01,Cognitive skills (core),critical thinking
+Cognitive,S01,Cognitive skills (core),adaptability
+Cognitive,S01,Cognitive skills (core),direction
+Cognitive,S01,Cognitive skills (core),planning
+Cognitive,S01,Cognitive skills (core),decision making
+Cognitive,S01,Cognitive skills (core),interpreting rule
+Cognitive,S01,Cognitive skills (core),processing information
+Cognitive,S01,Cognitive skills (core),design
+Cognitive,S01,Cognitive skills (core),sketch
+Cognitive,S01,Cognitive skills (core),idea generation
+Cognitive,S01,Cognitive skills (core),calculation
+Cognitive,S01,Cognitive skills (core),bookkeeping
+Cognitive,S01,Cognitive skills (core),correcting
+Cognitive,S01,Cognitive skills (core),measurement
+Cognitive,S01,Cognitive skills (core),memory
+Cognitive,S02,Cognitive skills (sophisticated),research
+Cognitive,S02,Cognitive skills (sophisticated),science
+Cognitive,S02,Cognitive skills (sophisticated),evaluate
+Cognitive,S02,Cognitive skills (sophisticated),devise rule
+Cognitive,S02,Cognitive skills (sophisticated),statistics
+Cognitive,S02,Cognitive skills (sophisticated),math
+Cognitive,S02,Cognitive skills (sophisticated),mathematics
+Cognitive,S02,Cognitive skills (sophisticated),data analysis
+Cognitive,S02,Cognitive skills (sophisticated),data engineering
+Cognitive,S02,Cognitive skills (sophisticated),data modelling
+Cognitive,S02,Cognitive skills (sophisticated),data modeling
+Cognitive,S02,Cognitive skills (sophisticated),data visualization
+Cognitive,S02,Cognitive skills (sophisticated),data visualisation
+Cognitive,S02,Cognitive skills (sophisticated),data mining
+Cognitive,S02,Cognitive skills (sophisticated),predictive model
+Cognitive,S03,Computer (general) skills,computer
+Cognitive,S03,Computer (general) skills,internet
+Cognitive,S03,Computer (general) skills,spreadsheet
+Cognitive,S03,Computer (general) skills,software
+Cognitive,S03,Computer (general) skills,ms windows
+Cognitive,S03,Computer (general) skills,ms excel
+Cognitive,S03,Computer (general) skills,ms powerpoint
+Cognitive,S03,Computer (general) skills,ms word
+Cognitive,S03,Computer (general) skills,ms office
+Cognitive,S03,Computer (general) skills,outlook
+Cognitive,S04,Software (specific) skills and technical support,programming
+Cognitive,S04,Software (specific) skills and technical support,java
+Cognitive,S04,Software (specific) skills and technical support,sql
+Cognitive,S04,Software (specific) skills and technical support,python
+Cognitive,S04,Software (specific) skills and technical support,javascript
+Cognitive,S04,Software (specific) skills and technical support,html
+Cognitive,S04,Software (specific) skills and technical support,php
+Cognitive,S04,Software (specific) skills and technical support,typescript
+Cognitive,S04,Software (specific) skills and technical support,swift
+Cognitive,S04,Software (specific) skills and technical support,kotlin
+Cognitive,S04,Software (specific) skills and technical support,scala
+Cognitive,S04,Software (specific) skills and technical support,ruby
+Cognitive,S04,Software (specific) skills and technical support,computer installation
+Cognitive,S04,Software (specific) skills and technical support,computer repair
+Cognitive,S04,Software (specific) skills and technical support,computer maintenance
+Cognitive,S04,Software (specific) skills and technical support,computer troubleshooting
+Cognitive,S04,Software (specific) skills and technical support,web development
+Cognitive,S04,Software (specific) skills and technical support,site design
+Cognitive,S05,Machine learning and artificial intelligence,artificial intelligence
+Cognitive,S05,Machine learning and artificial intelligence,automation
+Cognitive,S05,Machine learning and artificial intelligence,machine learning
+Cognitive,S05,Machine learning and artificial intelligence,reinforcement learning
+Cognitive,S05,Machine learning and artificial intelligence,supervised learning
+Cognitive,S05,Machine learning and artificial intelligence,unsupervised learning
+Cognitive,S05,Machine learning and artificial intelligence,deep learning
+Cognitive,S05,Machine learning and artificial intelligence,natural language processing
+Cognitive,S05,Machine learning and artificial intelligence,nlp
+Cognitive,S05,Machine learning and artificial intelligence,computer vision
+Cognitive,S05,Machine learning and artificial intelligence,decision trees
+Cognitive,S05,Machine learning and artificial intelligence,random forest
+Cognitive,S05,Machine learning and artificial intelligence,cluster analysis
+Cognitive,S05,Machine learning and artificial intelligence,neural networks
+Cognitive,S05,Machine learning and artificial intelligence,bayesian networks
+Cognitive,S05,Machine learning and artificial intelligence,convolutional neural network
+Cognitive,S05,Machine learning and artificial intelligence,cnn
+Cognitive,S05,Machine learning and artificial intelligence,support vector machines
+Cognitive,S05,Machine learning and artificial intelligence,svm
+Cognitive,S05,Machine learning and artificial intelligence,tensorflow
+Cognitive,S05,Machine learning and artificial intelligence,mapreduce
+Cognitive,S05,Machine learning and artificial intelligence,splunk
+Cognitive,S05,Machine learning and artificial intelligence,keras
+Cognitive,S05,Machine learning and artificial intelligence,pytorch
+Cognitive,S05,Machine learning and artificial intelligence,pyspark
+Cognitive,S05,Machine learning and artificial intelligence,apache spark
+Cognitive,S05,Machine learning and artificial intelligence,apache hadoop
+Cognitive,S06,Financial skills,budgeting
+Cognitive,S06,Financial skills,accounting
+Cognitive,S06,Financial skills,finance
+Cognitive,S06,Financial skills,cost
+Cognitive,S06,Financial skills,softland
+Cognitive,S06,Financial skills,erp
+Cognitive,S06,Financial skills,sap
+Cognitive,S06,Financial skills,xubio
+Cognitive,S06,Financial skills,cloudbooks
+Cognitive,S06,Financial skills,nubox
+Cognitive,S06,Financial skills,bloomberg
+Cognitive,S06,Financial skills,anfix
+Cognitive,S07,Writing skills,writing
+Cognitive,S07,Writing skills,editing
+Cognitive,S07,Writing skills,reports
+Cognitive,S07,Writing skills,proposals
+Cognitive,S08,Project and process management skills,project management
+Cognitive,S08,Project and process management skills,commercial management
+Cognitive,S08,Project and process management skills,process management
+Cognitive,S08,Project and process management skills,purchasing management
+Cognitive,S08,Project and process management skills,stock management
+Cognitive,S08,Project and process management skills,operation management
+Cognitive,S08,Project and process management skills,product management
+Cognitive,S08,Project and process management skills,supply management
+Socio-emotional,S09,Character skills,organized
+Socio-emotional,S09,Character skills,detail oriented
+Socio-emotional,S09,Character skills,multitasking
+Socio-emotional,S09,Character skills,time management
+Socio-emotional,S09,Character skills,deadlines
+Socio-emotional,S09,Character skills,energetic
+Socio-emotional,S09,Character skills,self-starter
+Socio-emotional,S09,Character skills,initiative
+Socio-emotional,S09,Character skills,self-motivated
+Socio-emotional,S09,Character skills,competent
+Socio-emotional,S09,Character skills,achieving
+Socio-emotional,S09,Character skills,hardworking
+Socio-emotional,S09,Character skills,reliable
+Socio-emotional,S09,Character skills,punctual
+Socio-emotional,S09,Character skills,stress resistant
+Socio-emotional,S09,Character skills,creative
+Socio-emotional,S09,Character skills,independent
+Socio-emotional,S10,Social skills,communication
+Socio-emotional,S10,Social skills,teamwork
+Socio-emotional,S10,Social skills,collaboration
+Socio-emotional,S10,Social skills,negotiation
+Socio-emotional,S10,Social skills,presentation
+Socio-emotional,S10,Social skills,team
+Socio-emotional,S10,Social skills,persuasion
+Socio-emotional,S10,Social skills,listening
+Socio-emotional,S10,Social skills,flexibility
+Socio-emotional,S10,Social skills,empathy
+Socio-emotional,S10,Social skills,assertiveness
+Socio-emotional,S10,Social skills,advice
+Socio-emotional,S10,Social skills,entertain
+Socio-emotional,S10,Social skills,lobby
+Socio-emotional,S10,Social skills,teaching
+Socio-emotional,S10,Social skills,interact with others
+Socio-emotional,S10,Social skills,verbal abilities
+Socio-emotional,S11,People management skills,supervisory
+Socio-emotional,S11,People management skills,leadership
+Socio-emotional,S11,People management skills,lead team
+Socio-emotional,S11,People management skills,people management
+Socio-emotional,S11,People management skills,team management
+Socio-emotional,S11,People management skills,coordinate team
+Socio-emotional,S11,People management skills,mentoring
+Socio-emotional,S11,People management skills,staff management
+Socio-emotional,S11,People management skills,staff supervision
+Socio-emotional,S11,People management skills,staff development
+Socio-emotional,S11,People management skills,performance management
+Socio-emotional,S11,People management skills,personnel management
+Socio-emotional,S11,People management skills,human resource management
+Socio-emotional,S12,Customer service skills,customer
+Socio-emotional,S12,Customer service skills,sales
+Socio-emotional,S12,Customer service skills,client
+Socio-emotional,S12,Customer service skills,patient
+Socio-emotional,S12,Customer service skills,advertise
+Socio-emotional,S12,Customer service skills,sell
+Socio-emotional,S12,Customer service skills,buy
+Socio-emotional,S12,Customer service skills,purchase
+Manual,S13,Finger dexterity skills,picking
+Manual,S13,Finger dexterity skills,sorting
+Manual,S13,Finger dexterity skills,repetitive assembly
+Manual,S13,Finger dexterity skills,mixing ingredients
+Manual,S13,Finger dexterity skills,baking
+Manual,S13,Finger dexterity skills,sewing
+Manual,S13,Finger dexterity skills,trimming
+Manual,S13,Finger dexterity skills,decorating
+Manual,S13,Finger dexterity skills,tabulating machine
+Manual,S13,Finger dexterity skills,control machine
+Manual,S13,Finger dexterity skills,packing
+Manual,S13,Finger dexterity skills,equipment
+Manual,S13,Finger dexterity skills,welding
+Manual,S14,Hand-foot-eye coordination skills,attending cattle
+Manual,S14,Hand-foot-eye coordination skills,attending animals
+Manual,S14,Hand-foot-eye coordination skills,driving
+Manual,S14,Hand-foot-eye coordination skills,transporting
+Manual,S14,Hand-foot-eye coordination skills,piloting
+Manual,S14,Hand-foot-eye coordination skills,pruning
+Manual,S14,Hand-foot-eye coordination skills,gymnastics
+Manual,S14,Hand-foot-eye coordination skills,sports
+Manual,S14,Hand-foot-eye coordination skills,reaction time
+Manual,S14,Hand-foot-eye coordination skills,fine manipulations
+Manual,S14,Hand-foot-eye coordination skills,accommodate
+Manual,S14,Hand-foot-eye coordination skills,renovate
+Manual,S14,Hand-foot-eye coordination skills,repair
+Manual,S14,Hand-foot-eye coordination skills,restore
+Manual,S14,Hand-foot-eye coordination skills,serving
+Manual,S14,Hand-foot-eye coordination skills,cleaning
+Manual,S14,Hand-foot-eye coordination skills,replenish stock
+Manual,S15,Physical skills,resistance
+Manual,S15,Physical skills,carrying loads
+Manual,S15,Physical skills,unload
+Manual,S15,Physical skills,walking
+Manual,S15,Physical skills,physical strength
+Manual,S15,Physical skills,physical conditioning
+Manual,S15,Physical skills,physical endurance
+Manual,S15,Physical skills,physically demanding
+Manual,S15,Physical skills,physically fit
