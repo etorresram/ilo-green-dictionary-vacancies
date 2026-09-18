@@ -1,0 +1,39 @@
+term,n_snippets_coded,n_green_sense,precision,decision
+regenerative,8,0,0.0,drop bare term: regenerative medicine
+greenfield,12,0,0.0,"drop: greenfield sites/accounts/projects in IT, sales and construction; place name"
+six sigma,12,0,0.0,"drop: process-improvement certification, no environmental sense in this corpus"
+lean manufacturing,12,0,0.0,"drop: process-improvement method, no environmental sense in this corpus"
+ecosystem,20,1,0.05,"drop: software, business and finance 'ecosystem'"
+fire protection,12,1,0.08,drop: building fire-protection systems; wildfire sense only in CAL FIRE
+contaminate,12,1,0.08,drop: clinical 'contaminated instruments/supplies'
+forest,12,1,0.08,"drop bare term: random forests, place names (Wake Forest, Oak Forest); 'forestry', 'foresters' stay"
+organic,20,4,0.2,"drop bare term: organic growth, organic search, organic chemistry; 'organic farming' stays"
+bike,12,3,0.25,drop: commuting amenities and lifestyle text; 'bicycle' stays
+remediation,20,6,0.3,drop bare term: IT-security and audit remediation; 'environmental remediation' and 'ground water remediation' stay as separate terms
+reuse,12,4,0.33,"drop bare term: code reuse, IP reuse, adaptive reuse of buildings"
+water management,8,3,0.38,keep; context rule for foundation-repair companies
+sustainable,20,10,0.5,keep; context rules for business-jargon senses
+waste reduction,8,4,0.5,keep; context rules for lean/cost senses
+pv,8,5,0.62,keep; context rule for pharmacovigilance
+environmental,20,14,0.7,keep; context rules for physical-demands and hospital senses
+insulation,12,9,0.75,keep
+sustainability,20,15,0.75,keep
+solar,8,6,0.75,keep
+natural environment,8,6,0.75,keep; context rule for 'natural environment training' (behavioural therapy)
+natural resource,12,10,0.83,keep
+habitat,12,11,0.92,keep
+pollution,12,11,0.92,keep
+paperless,12,12,1.0,keep (paperless office is the dictionary sense)
+energy management,8,8,1.0,keep
+smart home,8,8,1.0,keep (dictionary sense)
+ecology,8,8,1.0,keep
+ecological,8,8,1.0,keep
+energy saving,8,8,1.0,keep
+wildlife,8,8,1.0,keep
+recyclable,8,8,1.0,keep
+esg,12,12,1.0,keep
+landfill gas,8,8,1.0,keep (all from one company's boilerplate; see boilerplate sensitivity)
+lithium,8,8,1.0,keep
+hazmat,12,12,1.0,keep
+durability,12,12,1.0,keep (dictionary sense)
+solid waste,8,8,1.0,keep

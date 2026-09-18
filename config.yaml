@@ -1,0 +1,36 @@
+# All paths are relative to the repository root.
+data:
+  postings_csv: ../data/linkedin_2023_2024/postings.csv
+  job_industries_csv: ../data/linkedin_2023_2024/jobs/job_industries.csv
+  industries_csv: ../data/linkedin_2023_2024/mappings/industries.csv
+  work_dir: ../data/work            # intermediate files (not committed)
+dictionaries:
+  green: dictionaries/green_dictionary_ilo_2025.csv
+  skills: dictionaries/skills_taxonomy_ilo_2025.csv
+  exceptions: dictionaries/exceptions_en_us.csv
+  industry_map: dictionaries/linkedin_industry_to_isic_section.csv
+crosswalks:
+  onet_titles: crosswalks/onet_occupation_data.txt
+  onet_alt_titles: crosswalks/onet_alternate_titles.txt
+  soc2010_to_2018: crosswalks/bls_soc2010_to_soc2018.xlsx
+  isco08_to_soc2010: crosswalks/bls_isco08_to_soc2010.xls
+  isco08_structure: crosswalks/isco08_structure.xlsx
+text:
+  fields: [title, description]     # concatenated before pre-processing
+  max_ngram: 5                     # longest dictionary expression, in tokens
+  spacy_model: en_core_web_sm
+  n_process: 4
+  batch_size: 200
+salary:
+  hours_per_year: 2080
+  weeks_per_year: 52
+validation:
+  sample_size: 200
+  context_terms_min_matches: 40
+  context_window: 8
+  precision_threshold: 0.75
+output:
+  tables: output/tables
+  figures: output/figures
+  site: docs
+seed: 20260918

@@ -1,0 +1,17 @@
+characteristic,value,n,green_share
+formatted_experience_level,Associate,8967,0.1232
+formatted_experience_level,Director,3357,0.146
+formatted_experience_level,Entry level,31621,0.1532
+formatted_experience_level,Executive,1129,0.1594
+formatted_experience_level,Internship,1328,0.1724
+formatted_experience_level,Mid-Senior level,36979,0.1346
+formatted_experience_level,not stated,27751,0.1172
+formatted_work_type,Contract,11298,0.0542
+formatted_work_type,Full-time,88924,0.1522
+formatted_work_type,Internship,902,0.1519
+formatted_work_type,Other,432,0.0625
+formatted_work_type,Part-time,8083,0.0784
+formatted_work_type,Temporary,1008,0.0843
+formatted_work_type,Volunteer,485,0.1052
+remote_allowed,1.0,13205,0.0944
+remote_allowed,not stated,97927,0.1412

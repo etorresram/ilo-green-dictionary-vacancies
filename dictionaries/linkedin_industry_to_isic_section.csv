@@ -1,0 +1,389 @@
+industry_name,isic_section,isic_section_label
+Defense and Space Manufacturing,C,Manufacturing
+Computer Hardware Manufacturing,C,Manufacturing
+Software Development,J,Information and communication
+Computer Networking Products,C,Manufacturing
+"Technology, Information and Internet",J,Information and communication
+Semiconductor Manufacturing,C,Manufacturing
+Telecommunications,J,Information and communication
+Law Practice,M,"Professional, scientific and technical activities"
+Legal Services,M,"Professional, scientific and technical activities"
+Business Consulting and Services,M,"Professional, scientific and technical activities"
+Biotechnology Research,M,"Professional, scientific and technical activities"
+Medical Practices,Q,Human health and social work activities
+Hospitals and Health Care,Q,Human health and social work activities
+Pharmaceutical Manufacturing,C,Manufacturing
+Veterinary Services,M,"Professional, scientific and technical activities"
+Medical Equipment Manufacturing,C,Manufacturing
+Personal Care Product Manufacturing,C,Manufacturing
+Retail Apparel and Fashion,G,Wholesale and retail trade; repair of motor vehicles
+Sporting Goods Manufacturing,C,Manufacturing
+Tobacco Manufacturing,C,Manufacturing
+Retail Groceries,G,Wholesale and retail trade; repair of motor vehicles
+Food and Beverage Manufacturing,C,Manufacturing
+Computers and Electronics Manufacturing,C,Manufacturing
+Manufacturing,C,Manufacturing
+Furniture and Home Furnishings Manufacturing,C,Manufacturing
+Retail,G,Wholesale and retail trade; repair of motor vehicles
+Entertainment Providers,R,"Arts, entertainment and recreation"
+Gambling Facilities and Casinos,R,"Arts, entertainment and recreation"
+Travel Arrangements,N,Administrative and support service activities
+Hospitality,I,Accommodation and food service activities
+Restaurants,I,Accommodation and food service activities
+Spectator Sports,R,"Arts, entertainment and recreation"
+Food and Beverage Services,I,Accommodation and food service activities
+"Movies, Videos, and Sound",J,Information and communication
+Broadcast Media Production and Distribution,J,Information and communication
+"Museums, Historical Sites, and Zoos",R,"Arts, entertainment and recreation"
+Artists and Writers,R,"Arts, entertainment and recreation"
+Performing Arts,R,"Arts, entertainment and recreation"
+Recreational Facilities,R,"Arts, entertainment and recreation"
+Banking,K,Financial and insurance activities
+Insurance,K,Financial and insurance activities
+Financial Services,K,Financial and insurance activities
+Real Estate,L,Real estate activities
+Investment Banking,K,Financial and insurance activities
+Investment Management,K,Financial and insurance activities
+Accounting,M,"Professional, scientific and technical activities"
+Construction,F,Construction
+Wholesale Building Materials,G,Wholesale and retail trade; repair of motor vehicles
+Architecture and Planning,M,"Professional, scientific and technical activities"
+Civil Engineering,M,"Professional, scientific and technical activities"
+Aviation and Aerospace Component Manufacturing,C,Manufacturing
+Motor Vehicle Manufacturing,C,Manufacturing
+Chemical Manufacturing,C,Manufacturing
+Machinery Manufacturing,C,Manufacturing
+Mining,B,Mining and quarrying
+Oil and Gas,B,Mining and quarrying
+Shipbuilding,C,Manufacturing
+Utilities,D,"Electricity, gas, steam and air conditioning supply"
+Textile Manufacturing,C,Manufacturing
+Paper and Forest Product Manufacturing,C,Manufacturing
+Railroad Equipment Manufacturing,C,Manufacturing
+Farming,A,"Agriculture, forestry and fishing"
+Dairy Product Manufacturing,C,Manufacturing
+Fisheries,A,"Agriculture, forestry and fishing"
+Primary and Secondary Education,P,Education
+Higher Education,P,Education
+Education Administration Programs,P,Education
+Research Services,M,"Professional, scientific and technical activities"
+Armed Forces,O,Public administration and defence
+Legislative Offices,O,Public administration and defence
+Administration of Justice,O,Public administration and defence
+International Affairs,O,Public administration and defence
+Government Administration,O,Public administration and defence
+Executive Offices,O,Public administration and defence
+Law Enforcement,O,Public administration and defence
+Public Safety,O,Public administration and defence
+Public Policy Offices,O,Public administration and defence
+Advertising Services,M,"Professional, scientific and technical activities"
+Newspaper Publishing,J,Information and communication
+Book and Periodical Publishing,J,Information and communication
+Printing Services,C,Manufacturing
+Information Services,J,Information and communication
+Libraries,R,"Arts, entertainment and recreation"
+Environmental Services,E,"Water supply; sewerage, waste management and remediation"
+Freight and Package Transportation,H,Transportation and storage
+Individual and Family Services,Q,Human health and social work activities
+Religious Institutions,S,Other service activities
+Civic and Social Organizations,S,Other service activities
+Consumer Services,S,Other service activities
+Truck Transportation,H,Transportation and storage
+Warehousing and Storage,H,Transportation and storage
+Airlines and Aviation,H,Transportation and storage
+Maritime Transportation,H,Transportation and storage
+IT Services and IT Consulting,J,Information and communication
+Market Research,M,"Professional, scientific and technical activities"
+Public Relations and Communications Services,M,"Professional, scientific and technical activities"
+Design Services,M,"Professional, scientific and technical activities"
+Non-profit Organizations,S,Other service activities
+Fundraising,N,Administrative and support service activities
+Strategic Management Services,M,"Professional, scientific and technical activities"
+Writing and Editing,M,"Professional, scientific and technical activities"
+Staffing and Recruiting,N,Administrative and support service activities
+Professional Training and Coaching,P,Education
+Venture Capital and Private Equity Principals,K,Financial and insurance activities
+Political Organizations,S,Other service activities
+Translation and Localization,M,"Professional, scientific and technical activities"
+Computer Games,J,Information and communication
+Events Services,N,Administrative and support service activities
+Retail Art Supplies,G,Wholesale and retail trade; repair of motor vehicles
+"Appliances, Electrical, and Electronics Manufacturing",C,Manufacturing
+Online Audio and Video Media,J,Information and communication
+Nanotechnology Research,M,"Professional, scientific and technical activities"
+Musicians,R,"Arts, entertainment and recreation"
+"Transportation, Logistics, Supply Chain and Storage",H,Transportation and storage
+Plastics Manufacturing,C,Manufacturing
+Computer and Network Security,J,Information and communication
+Wireless Services,J,Information and communication
+Alternative Dispute Resolution,M,"Professional, scientific and technical activities"
+Security and Investigations,N,Administrative and support service activities
+Facilities Services,N,Administrative and support service activities
+Outsourcing and Offshoring Consulting,N,Administrative and support service activities
+Wellness and Fitness Services,Q,Human health and social work activities
+Alternative Medicine,Q,Human health and social work activities
+Media Production,J,Information and communication
+Animation and Post-production,J,Information and communication
+Leasing Non-residential Real Estate,L,Real estate activities
+Capital Markets,K,Financial and insurance activities
+Think Tanks,M,"Professional, scientific and technical activities"
+Philanthropic Fundraising Services,N,Administrative and support service activities
+E-Learning Providers,P,Education
+Wholesale,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Import and Export,G,Wholesale and retail trade; repair of motor vehicles
+Industrial Machinery Manufacturing,C,Manufacturing
+Photography,M,"Professional, scientific and technical activities"
+Human Resources Services,N,Administrative and support service activities
+Retail Office Equipment,G,Wholesale and retail trade; repair of motor vehicles
+Mental Health Care,Q,Human health and social work activities
+Graphic Design,M,"Professional, scientific and technical activities"
+International Trade and Development,U,Activities of extraterritorial organizations
+Beverage Manufacturing,C,Manufacturing
+Retail Luxury Goods and Jewelry,G,Wholesale and retail trade; repair of motor vehicles
+Renewable Energy Semiconductor Manufacturing,C,Manufacturing
+"Glass, Ceramics and Concrete Manufacturing",C,Manufacturing
+Packaging and Containers Manufacturing,C,Manufacturing
+Automation Machinery Manufacturing,C,Manufacturing
+Government Relations Services,M,"Professional, scientific and technical activities"
+Horticulture,A,"Agriculture, forestry and fishing"
+"Farming, Ranching, Forestry",A,"Agriculture, forestry and fishing"
+Forestry and Logging,A,"Agriculture, forestry and fishing"
+"Oil, Gas, and Mining",B,Mining and quarrying
+"Electric Power Transmission, Control, and Distribution",D,"Electricity, gas, steam and air conditioning supply"
+Electric Power Generation,D,"Electricity, gas, steam and air conditioning supply"
+Solar Electric Power Generation,D,"Electricity, gas, steam and air conditioning supply"
+Environmental Quality Programs,O,Public administration and defence
+Natural Gas Distribution,D,"Electricity, gas, steam and air conditioning supply"
+"Water, Waste, Steam, and Air Conditioning Services",E,"Water supply; sewerage, waste management and remediation"
+Building Construction,F,Construction
+Residential Building Construction,F,Construction
+Nonresidential Building Construction,F,Construction
+Utility System Construction,F,Construction
+Specialty Trade Contractors,F,Construction
+Building Equipment Contractors,F,Construction
+Animal Feed Manufacturing,C,Manufacturing
+Sugar and Confectionery Product Manufacturing,C,Manufacturing
+Meat Products Manufacturing,C,Manufacturing
+Seafood Product Manufacturing,C,Manufacturing
+Baked Goods Manufacturing,C,Manufacturing
+Apparel Manufacturing,C,Manufacturing
+Fashion Accessories Manufacturing,C,Manufacturing
+Footwear Manufacturing,C,Manufacturing
+Oil and Coal Product Manufacturing,C,Manufacturing
+Chemical Raw Materials Manufacturing,C,Manufacturing
+Agricultural Chemical Manufacturing,C,Manufacturing
+"Paint, Coating, and Adhesive Manufacturing",C,Manufacturing
+Soap and Cleaning Product Manufacturing,C,Manufacturing
+Plastics and Rubber Product Manufacturing,C,Manufacturing
+Rubber Products Manufacturing,C,Manufacturing
+Glass Product Manufacturing,C,Manufacturing
+Wood Product Manufacturing,C,Manufacturing
+Abrasives and Nonmetallic Minerals Manufacturing,C,Manufacturing
+Primary Metal Manufacturing,C,Manufacturing
+Fabricated Metal Products,C,Manufacturing
+Architectural and Structural Metal Manufacturing,C,Manufacturing
+"Boilers, Tanks, and Shipping Container Manufacturing",C,Manufacturing
+Construction Hardware Manufacturing,C,Manufacturing
+Spring and Wire Product Manufacturing,C,Manufacturing
+Turned Products and Fastener Manufacturing,C,Manufacturing
+Metal Treatments,C,Manufacturing
+"Metal Valve, Ball, and Roller Manufacturing",C,Manufacturing
+"Agriculture, Construction, Mining Machinery Manufacturing",C,Manufacturing
+Commercial and Service Industry Machinery Manufacturing,C,Manufacturing
+HVAC and Refrigeration Equipment Manufacturing,C,Manufacturing
+Metalworking Machinery Manufacturing,C,Manufacturing
+Engines and Power Transmission Equipment Manufacturing,C,Manufacturing
+Communications Equipment Manufacturing,C,Manufacturing
+Audio and Video Equipment Manufacturing,C,Manufacturing
+Measuring and Control Instrument Manufacturing,C,Manufacturing
+Magnetic and Optical Media Manufacturing,C,Manufacturing
+Electric Lighting Equipment Manufacturing,C,Manufacturing
+Transportation Equipment Manufacturing,C,Manufacturing
+Motor Vehicle Parts Manufacturing,C,Manufacturing
+Household and Institutional Furniture Manufacturing,C,Manufacturing
+Office Furniture and Fixtures Manufacturing,C,Manufacturing
+Mattress and Blinds Manufacturing,C,Manufacturing
+Wholesale Motor Vehicles and Parts,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Furniture and Home Furnishings,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Photography Equipment and Supplies,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Computer Equipment,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Metals and Minerals,G,Wholesale and retail trade; repair of motor vehicles
+"Wholesale Appliances, Electrical, and Electronics",G,Wholesale and retail trade; repair of motor vehicles
+"Wholesale Hardware, Plumbing, Heating Equipment",G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Machinery,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Recyclable Materials,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Luxury Goods and Jewelry,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Paper Products,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Drugs and Sundries,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Apparel and Sewing Supplies,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Footwear,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Food and Beverage,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Raw Farm Products,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Chemical and Allied Products,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Petroleum and Petroleum Products,G,Wholesale and retail trade; repair of motor vehicles
+Wholesale Alcoholic Beverages,G,Wholesale and retail trade; repair of motor vehicles
+Internet Marketplace Platforms,G,Wholesale and retail trade; repair of motor vehicles
+Retail Motor Vehicles,G,Wholesale and retail trade; repair of motor vehicles
+Retail Furniture and Home Furnishings,G,Wholesale and retail trade; repair of motor vehicles
+"Retail Appliances, Electrical, and Electronic Equipment",G,Wholesale and retail trade; repair of motor vehicles
+Retail Building Materials and Garden Equipment,G,Wholesale and retail trade; repair of motor vehicles
+Food and Beverage Retail,G,Wholesale and retail trade; repair of motor vehicles
+Retail Health and Personal Care Products,G,Wholesale and retail trade; repair of motor vehicles
+Retail Musical Instruments,G,Wholesale and retail trade; repair of motor vehicles
+Retail Books and Printed News,G,Wholesale and retail trade; repair of motor vehicles
+Retail Florists,G,Wholesale and retail trade; repair of motor vehicles
+Retail Office Supplies and Gifts,G,Wholesale and retail trade; repair of motor vehicles
+Retail Recyclable Materials & Used Merchandise,G,Wholesale and retail trade; repair of motor vehicles
+Online and Mail Order Retail,G,Wholesale and retail trade; repair of motor vehicles
+Rail Transportation,H,Transportation and storage
+Ground Passenger Transportation,H,Transportation and storage
+Urban Transit Services,H,Transportation and storage
+School and Employee Bus Services,H,Transportation and storage
+Pipeline Transportation,H,Transportation and storage
+"Technology, Information and Media",J,Information and communication
+Credit Intermediation,K,Financial and insurance activities
+Loan Brokers,K,Financial and insurance activities
+Securities and Commodity Exchanges,K,Financial and insurance activities
+Investment Advice,K,Financial and insurance activities
+Insurance Carriers,K,Financial and insurance activities
+Insurance Agencies and Brokerages,K,Financial and insurance activities
+"Claims Adjusting, Actuarial Services",K,Financial and insurance activities
+Funds and Trusts,K,Financial and insurance activities
+Insurance and Employee Benefit Funds,K,Financial and insurance activities
+Pension Funds,K,Financial and insurance activities
+Trusts and Estates,K,Financial and insurance activities
+Real Estate and Equipment Rental Services,L,Real estate activities
+Real Estate Agents and Brokers,L,Real estate activities
+Equipment Rental Services,N,Administrative and support service activities
+Consumer Goods Rental,N,Administrative and support service activities
+Commercial and Industrial Equipment Rental,N,Administrative and support service activities
+Professional Services,M,"Professional, scientific and technical activities"
+IT System Design Services,J,Information and communication
+Marketing Services,M,"Professional, scientific and technical activities"
+Holding Companies,K,Financial and insurance activities
+Administrative and Support Services,N,Administrative and support service activities
+Office Administration,N,Administrative and support service activities
+Executive Search Services,N,Administrative and support service activities
+Telephone Call Centers,N,Administrative and support service activities
+Collection Agencies,N,Administrative and support service activities
+Security Systems Services,N,Administrative and support service activities
+Janitorial Services,N,Administrative and support service activities
+Waste Treatment and Disposal,E,"Water supply; sewerage, waste management and remediation"
+Education,P,Education
+Technical and Vocational Training,P,Education
+Sports and Recreation Instruction,P,Education
+Dentists,Q,Human health and social work activities
+"Physical, Occupational and Speech Therapists",Q,Human health and social work activities
+Medical and Diagnostic Laboratories,Q,Human health and social work activities
+Home Health Care Services,Q,Human health and social work activities
+Hospitals,Q,Human health and social work activities
+Nursing Homes and Residential Care Facilities,Q,Human health and social work activities
+Community Services,Q,Human health and social work activities
+Performing Arts and Spectator Sports,R,"Arts, entertainment and recreation"
+Theater Companies,R,"Arts, entertainment and recreation"
+Sports Teams and Clubs,R,"Arts, entertainment and recreation"
+Museums,R,"Arts, entertainment and recreation"
+Zoos and Botanical Gardens,R,"Arts, entertainment and recreation"
+Amusement Parks and Arcades,R,"Arts, entertainment and recreation"
+Golf Courses and Country Clubs,R,"Arts, entertainment and recreation"
+Accommodation and Food Services,I,Accommodation and food service activities
+Hotels and Motels,I,Accommodation and food service activities
+"Bed-and-Breakfasts, Hostels, Homestays",I,Accommodation and food service activities
+Caterers,I,Accommodation and food service activities
+Repair and Maintenance,S,Other service activities
+Vehicle Repair and Maintenance,G,Wholesale and retail trade; repair of motor vehicles
+Personal and Laundry Services,S,Other service activities
+Personal Care Services,S,Other service activities
+Household Services,T,
+Health and Human Services,Q,Human health and social work activities
+Public Health,O,Public administration and defence
+Public Assistance Programs,O,Public administration and defence
+"Air, Water, and Waste Program Management",O,Public administration and defence
+Conservation Programs,O,Public administration and defence
+Housing and Community Development,O,Public administration and defence
+Community Development and Urban Planning,O,Public administration and defence
+Economic Programs,O,Public administration and defence
+Military and International Affairs,O,Public administration and defence
+Operations Consulting,M,"Professional, scientific and technical activities"
+Data Infrastructure and Analytics,J,Information and communication
+Electrical Equipment Manufacturing,C,Manufacturing
+Wind Electric Power Generation,D,"Electricity, gas, steam and air conditioning supply"
+Wineries,C,Manufacturing
+Landscaping Services,N,Administrative and support service activities
+Courts of Law,O,Public administration and defence
+Correctional Institutions,O,Public administration and defence
+Fire Protection,O,Public administration and defence
+Housing Programs,O,Public administration and defence
+Transportation Programs,O,Public administration and defence
+Utilities Administration,O,Public administration and defence
+Space Research and Technology,O,Public administration and defence
+Desktop Computing Software Products,J,Information and communication
+IT System Custom Software Development,J,Information and communication
+IT System Operations and Maintenance,J,Information and communication
+IT System Installation and Disposal,J,Information and communication
+IT System Training and Support,J,Information and communication
+IT System Data Services,J,Information and communication
+IT System Testing and Evaluation,J,Information and communication
+Internet News,J,Information and communication
+Interior Design,M,"Professional, scientific and technical activities"
+Social Networking Platforms,J,Information and communication
+Business Intelligence Platforms,J,Information and communication
+Business Content,J,Information and communication
+Data Security Software Products,J,Information and communication
+Internet Publishing,J,Information and communication
+Blockchain Services,J,Information and communication
+Defense & Space,C,Manufacturing
+Veterinary,M,"Professional, scientific and technical activities"
+Cosmetics,C,Manufacturing
+Apparel & Fashion,C,Manufacturing
+Consumer Electronics,C,Manufacturing
+Consumer Goods,C,Manufacturing
+Furniture,C,Manufacturing
+"Leisure, Travel & Tourism",N,Administrative and support service activities
+Food & Beverages,C,Manufacturing
+Fine Art,R,"Arts, entertainment and recreation"
+Building Materials,C,Manufacturing
+Automotive,C,Manufacturing
+Dairy,C,Manufacturing
+Education Management,P,Education
+Non-profit Organization Management,S,Other service activities
+Program Development,S,Other service activities
+"Health, Wellness & Fitness",Q,Human health and social work activities
+E-learning,P,Education
+Human Resources,N,Administrative and support service activities
+Luxury Goods & Jewelry,C,Manufacturing
+Renewables & Environment,D,"Electricity, gas, steam and air conditioning supply"
+Online Media,J,Information and communication
+Industrial Automation,C,Manufacturing
+Medical Device,C,Manufacturing
+Semiconductors,C,Manufacturing
+Commercial Real Estate,L,Real estate activities
+Wine & Spirits,C,Manufacturing
+Mechanical Or Industrial Engineering,M,"Professional, scientific and technical activities"
+Transportation/Trucking/Railroad,H,Transportation and storage
+Packaging & Containers,C,Manufacturing
+Food Production,C,Manufacturing
+Aviation & Aerospace,C,Manufacturing
+Design,M,"Professional, scientific and technical activities"
+Warehousing,H,Transportation and storage
+Information Technology & Services,J,Information and communication
+Research,M,"Professional, scientific and technical activities"
+Computer Networking,C,Manufacturing
+Computer Hardware,C,Manufacturing
+Maritime,H,Transportation and storage
+Entertainment,R,"Arts, entertainment and recreation"
+Biotechnology,M,"Professional, scientific and technical activities"
+Paper & Forest Products,C,Manufacturing
+Renewable Energy Power Generation,D,"Electricity, gas, steam and air conditioning supply"
+Renewable Energy Equipment Manufacturing,C,Manufacturing
+Engineering Services,M,"Professional, scientific and technical activities"
+Services for Renewable Energy,D,"Electricity, gas, steam and air conditioning supply"
+Digital Accessibility Services,M,"Professional, scientific and technical activities"
+Accessible Architecture and Design,M,"Professional, scientific and technical activities"
+Robot Manufacturing,C,Manufacturing
+Robotics Engineering,M,"Professional, scientific and technical activities"
+Surveying and Mapping Services,M,"Professional, scientific and technical activities"
+Retail Pharmacies,G,Wholesale and retail trade; repair of motor vehicles
+Climate Technology Product Manufacturing,C,Manufacturing
+Climate Data and Analytics,J,Information and communication
+Alternative Fuel Vehicle Manufacturing,C,Manufacturing
