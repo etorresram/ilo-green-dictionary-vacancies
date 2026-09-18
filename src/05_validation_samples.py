@@ -8,7 +8,7 @@
 (b) validation/vacancy_sample_for_hand_coding.csv
     A stratified random sample (half green, half non-green as classified by the dictionary) of
     full descriptions, without the machine classification shown, for blind coding. Precision and
-    recall per domain are computed by src/06_validation_metrics.py once the file is filled in.
+    recall per domain are computed by src/06b_validation_metrics.py once the file is filled in.
 """
 import re, sys
 import numpy as np, pandas as pd

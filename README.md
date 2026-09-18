@@ -39,6 +39,7 @@ src/03_green_and_skills_variables.py   dictionary matching, green share, shade
 src/04_occupation_mapping.py           title -> ISCO-08 with explicit assignment rule
 src/05_validation_samples.py           context-check snippets and blind hand-coding sample
 src/05b_boilerplate_sensitivity.py     effect of repeated corporate text
+src/06b_validation_metrics.py          precision and recall against the hand-coded sample
 src/06_descriptives.py                 tables (output/tables) and figures (output/figures)
 src/07_technical_green_skills.py       candidate occupation-specific green skills
 src/08_build_site.py                   docs/index.html (GitHub Pages)
@@ -61,6 +62,7 @@ python src/04_occupation_mapping.py       # ~10 min (fuzzy title matching)
 python src/05_validation_samples.py       # then code the two CSVs in validation/ by hand
 python src/05b_boilerplate_sensitivity.py
 python src/06_descriptives.py
+python src/06b_validation_metrics.py      # after the blind sample has been coded
 python src/07_technical_green_skills.py
 python src/08_build_site.py
 ```
@@ -108,6 +110,10 @@ under it (`output/tables/t11b_...`). This makes the definitional uncertainty vis
 hiding it in a choice.
 
 ### 5. Validation
+The context check in this repository (`validation/context_check_results.csv`, 38 terms) was coded in a
+first pass by a single reviewer with an AI assistant and awaits a second, independent coder; treat its
+precision figures as provisional. `validation/isco_spot_check_50.csv` holds 50 random occupation
+assignments across the three matching tiers for review.
 `validation/context_check_snippets.csv` holds 40 occurrences with context for every frequent green
 term; a reviewer marks each as green-sense or not, and terms below 75% are handled through
 `dictionaries/exceptions_en_us.csv` (drop the term, or drop the match when a context pattern is
