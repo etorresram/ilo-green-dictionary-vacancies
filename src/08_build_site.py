@@ -47,7 +47,7 @@ def main():
     <p class="note"><b>Read this first.</b> Time coverage: {html.escape(cp.get('n_months_note', ''))}. Vacancies come from one platform in one country and there are no applicants' profiles, so demand cannot be compared with supply. The skills variables use the <em>selected</em> keywords published in the ILO brief, not the full taxonomy. {"The exception list was validated on the US corpus and reused here; a corpus-specific context check is pending." if key != "us_linkedin" else ""} All figures illustrate the workflow; none is an estimate of a national labour market.</p>
     <h2>1. What was done</h2>
     <ol>
-      <li><b>Data preparation.</b> Duplicate and empty postings removed; posted salaries annualised; LinkedIn industries mapped to ISIC Rev. 4 sections.</li>
+      <li><b>Data preparation.</b> Duplicate and empty postings removed; posted salaries annualised; platform industry or category labels mapped to ISIC Rev. 4 sections with a reviewed file.</li>
       <li><b>Text pre-processing</b> in the ILO sequence: tokenisation, normalisation, stop-word removal (keeping stop words inside dictionary expressions), lemmatisation (spaCy). Dictionary expressions go through the same pipeline, so matching is lemma-to-lemma on full words.</li>
       <li><b>Green task variables</b>: 9 sustainability domains, binary and counts; a vacancy is green if it matches at least one domain.</li>
       <li><b>Skills variables</b>: 15 subcategories (cognitive, socio-emotional, manual).</li>
@@ -57,29 +57,29 @@ def main():
     </ol>
     {table_html(t0)}
     {"<h2>2. Green vacancies over time</h2><div class='fig'>" + fig["f07"] + "</div><p>Monthly share of vacancies with at least one green task and share of darker-green vacancies; hover for the number of postings per month. Tables t23 and t24 give the same by month and ISCO-08 major group.</p>" if fig["f07"] else ""}
-    <h2>2. Green vacancies by occupation and industry</h2>
+    <h2>{"3" if fig["f07"] else "2"}. Green vacancies by occupation and industry</h2>
     <div class="fig">{fig['f01_green_by_isco_major']}</div>
     <p>Occupation coding coverage and ambiguity:</p>{table_html(t2)}
     <p>Sensitivity of the occupational profile to the assignment rule for titles with more than one admissible ISCO-08 code (main rule vs alternative rule):</p>
     {table_html(t11b, ["isco08_major_label", "n", "green_share", "green_share_alt_rule", "abs_diff_pp"])}
     <div class="fig">{fig['f02_green_by_isic_section']}</div>
-    <h2>3. Shade of green and sustainability domains</h2>
+    <h2>{"4" if fig["f07"] else "3"}. Shade of green and sustainability domains</h2>
     {table_html(t10)}
     <div class="fig">{fig['f06_intensity']}</div>
     <div class="fig">{fig['f03_domains']}</div>
-    <h2>4. Skills requirements in green versus non-green vacancies</h2>
+    <h2>{"5" if fig["f07"] else "4"}. Skills requirements in green versus non-green vacancies</h2>
     <div class="fig">{fig['f04_skills_green_vs_nongreen']}</div>
-    <h2>5. Posted wages</h2>
+    <h2>{"6" if fig["f07"] else "5"}. Posted wages</h2>
     <p>Posted annual wages ({cur}, {s['n_with_wage']:,} vacancies with a salary field, midpoint of the posted range, annualised). Nominal values; over a period of a few months deflation changes nothing material, and the code has a hook for a CPI deflator when the series is longer.</p>
     {table_html(t16)}
     <div class="fig">{fig['f05_wages_by_isco_major']}</div>
-    <h2>6. Candidate occupation-specific technical green skills</h2>
+    <h2>{"7" if fig["f07"] else "6"}. Candidate occupation-specific technical green skills</h2>
     <p>Expressions over-represented in green vacancies relative to non-green vacancies of the same ISCO-08 sub-major group, excluding terms already in the ILO dictionaries. A starting point for a national green skills taxonomy, to be reviewed by experts.</p>
     {table_html(t19s)}
-    <h2>7. Validation and quality assurance</h2>
+    <h2>{"8" if fig["f07"] else "7"}. Validation and quality assurance</h2>
     {"<p>Context check of the most frequent green terms (share of sampled occurrences used in a green sense; terms below 75% are handled through the exception list):</p>" + table_html(tv) if tv is not None else ""}
     {"<p>Boilerplate sensitivity: company text repeated across many postings can inflate green matches. Results with repeated sentences removed:</p>" + table_html(tb) if tb is not None else ""}
-    <h2>8. Reproduce</h2>
+    <h2>{"9" if fig["f07"] else "8"}. Reproduce</h2>
     <p>Clone the repository, download the vacancy dataset into <code>data/</code>, install <code>requirements.txt</code> and run the numbered scripts in <code>src/</code> in order. Every intermediate file, threshold and rule is set in <code>config.yaml</code>; the README is written as an implementation guide for a national institution.</p>
     <footer>Dictionaries © International Labour Organization 2025, reproduced from the ILO Research Briefs under CC BY 4.0. Vacancy data: {html.escape(cp.get('name', ''))}, {html.escape(cp.get('licence', ''))}. Code: MIT. This is an independent exercise and does not represent the views of the ILO or of the author's employers.</footer>
     </body></html>"""]
