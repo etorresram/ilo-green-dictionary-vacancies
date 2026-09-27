@@ -32,7 +32,7 @@ def main():
     fig["f07"] = dark(open(F / "f07_green_by_month.html").read()) if (F / "f07_green_by_month.html").exists() else ""
     cp = c.get("corpus", {}); cur = cp.get("currency", "USD"); key = cp.get("key", "us_linkedin")
     other = ('<p class="note">Two corpora are available: <a href="../">United States (LinkedIn, Kaggle)</a> and <a href="./">Malaysia (JobStreet, Hugging Face)</a>. Same code, same dictionaries, different exception-list status.</p>' if key != "us_linkedin"
-             else '<p class="note">Two corpora are available: <a href="./">United States (LinkedIn, Kaggle)</a> and <a href="malaysia/">Malaysia (JobStreet, Hugging Face)</a>, an ASEAN member state with a five-month series. Same code, same dictionaries.</p>')
+             else '<p class="note">Two corpora are available: <a href="./">United States (LinkedIn, Kaggle)</a> and <a href="malaysia/">Malaysia (JobStreet, Hugging Face)</a>, an ASEAN member state with a six-month series. Same code, same dictionaries.</p>')
     t0 = pd.read_csv(T / "t00_sample_construction.csv"); t2 = pd.read_csv(T / "t02_occupation_mapping_coverage.csv")
     t10 = pd.read_csv(T / "t10_green_shade_overall.csv"); t14 = pd.read_csv(T / "t14_domains.csv"); t16 = pd.read_csv(T / "t16_wages_by_shade.csv")
     t11b = pd.read_csv(T / "t11b_green_by_isco_major_sensitivity.csv"); t19 = pd.read_csv(T / "t19_candidate_technical_green_skills_by_isco_submajor.csv")

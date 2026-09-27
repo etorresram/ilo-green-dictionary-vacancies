@@ -15,7 +15,7 @@ Malaysia (JobStreet, Hugging Face): https://etorresram.github.io/ilo-green-dicti
 terms with below 75% green-sense precision in this corpus; removing corporate boilerplate lowers the green
 share from 13.6% to 12.0%.
 
-> Two public corpora are used: a one-month snapshot of US LinkedIn postings (111k) and a five-month
+> Two public corpora are used: a one-month snapshot of US LinkedIn postings (111k) and a six-month
 > series of JobStreet postings from Malaysia (59k), an ASEAN member state. Neither includes applicants'
 > profiles, so demand cannot be compared with supply. The skills variables use the *selected* keywords
 > published by the ILO, not the full taxonomy. Every number here illustrates the workflow; none is an

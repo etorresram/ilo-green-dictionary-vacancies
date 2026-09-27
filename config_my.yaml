@@ -6,7 +6,7 @@ corpus:
   source_url: https://huggingface.co/datasets/azrai99/job-dataset
   licence: Apache 2.0 (dataset card); scraped from JobStreet
   currency: MYR
-  n_months_note: February to June 2024 used for the monthly series (earlier months have too few postings)
+  n_months_note: January to June 2024 used for the monthly series (months with at least 500 postings)
 data:
   postings_parquet: ../data/jobstreet_my/jobstreet_my.parquet
   work_dir: ../data/work_my
