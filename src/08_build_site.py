@@ -10,11 +10,26 @@ def table_html(df, cols=None, n=None):
     if n: d = d.head(n)
     return d.to_html(index=False, classes="tbl", border=0, float_format=lambda x: f"{x:,.3f}" if abs(x) < 1 else f"{x:,.0f}")
 
+# Colour substitutions applied to the Plotly HTML written by step 6 (plotly_white template) so that the
+# figures sit on the dark page without re-running the pipeline. Series colours keep their ordering:
+# "green" becomes a mid green that reads on a dark background and "darker green" stays the deeper shade.
+_DARK = [('"paper_bgcolor":"white"', '"paper_bgcolor":"rgba(0,0,0,0)"'), ('"plot_bgcolor":"white"', '"plot_bgcolor":"rgba(0,0,0,0)"'),
+         ('"bgcolor":"white"', '"bgcolor":"#1c2126"'), ('"color":"#2a3f5f"', '"color":"#e3e7ea"'),
+         ('"gridcolor":"#EBF0F8"', '"gridcolor":"#2b3238"'), ('"gridcolor":"#DFE8F3"', '"gridcolor":"#2b3238"'), ('"gridcolor":"#C8D4E3"', '"gridcolor":"#2b3238"'),
+         ('"linecolor":"#EBF0F8"', '"linecolor":"#3a444c"'), ('"linecolor":"#A2B1C6"', '"linecolor":"#3a444c"'), ('"linecolor":"#C8D4E3"', '"linecolor":"#3a444c"'),
+         ('"zerolinecolor":"#EBF0F8"', '"zerolinecolor":"#3a444c"'), ('"color":"white"', '"color":"#1c2126"'),
+         ('"color":"#2E7D32"', '"color":"#66BB6A"'), ('"color":"#1B5E20"', '"color":"#2E7D32"'),
+         ('"line":{"dash":"dash"}', '"line":{"dash":"dash","color":"#e3e7ea"}'), ('"mapbox":{"style":"light"}', '"mapbox":{"style":"dark"}')]
+
+def dark(fig_html):
+    for a, b in _DARK: fig_html = fig_html.replace(a, b)
+    return fig_html
+
 def main():
     c = cfg(); T = path(c["output"]["tables"]); F = path(c["output"]["figures"]); D = path(c["output"]["site"]); D.mkdir(exist_ok=True)
     s = json.load(open(T / "summary.json"))
-    fig = {n: open(F / f"{n}.html").read() for n in ["f01_green_by_isco_major", "f02_green_by_isic_section", "f03_domains", "f04_skills_green_vs_nongreen", "f05_wages_by_isco_major", "f06_intensity"]}
-    fig["f07"] = open(F / "f07_green_by_month.html").read() if (F / "f07_green_by_month.html").exists() else ""
+    fig = {n: dark(open(F / f"{n}.html").read()) for n in ["f01_green_by_isco_major", "f02_green_by_isic_section", "f03_domains", "f04_skills_green_vs_nongreen", "f05_wages_by_isco_major", "f06_intensity"]}
+    fig["f07"] = dark(open(F / "f07_green_by_month.html").read()) if (F / "f07_green_by_month.html").exists() else ""
     cp = c.get("corpus", {}); cur = cp.get("currency", "USD"); key = cp.get("key", "us_linkedin")
     other = ('<p class="note">Two corpora are available: <a href="../">United States (LinkedIn, Kaggle)</a> and <a href="./">Malaysia (JobStreet, Hugging Face)</a>. Same code, same dictionaries, different exception-list status.</p>' if key != "us_linkedin"
              else '<p class="note">Two corpora are available: <a href="./">United States (LinkedIn, Kaggle)</a> and <a href="malaysia/">Malaysia (JobStreet, Hugging Face)</a>, an ASEAN member state with a five-month series. Same code, same dictionaries.</p>')
@@ -25,11 +40,12 @@ def main():
     tb = pd.read_csv(T / "t21_boilerplate_sensitivity.csv") if (T / "t21_boilerplate_sensitivity.csv").exists() else None
     t19s = t19.groupby("isco08_submajor_label")["expression"].apply(lambda x: ", ".join(x.head(10))).reset_index().rename(columns={"isco08_submajor_label": "ISCO-08 sub-major group", "expression": "Top candidate expressions (over-represented in green vacancies)"})
     css = """
-    body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:1000px;margin:0 auto;padding:24px;color:#222;line-height:1.5}
-    h1{font-size:1.7rem;margin-bottom:.2rem} h2{font-size:1.25rem;border-bottom:2px solid #2E7D32;padding-bottom:4px;margin-top:2.2rem}
-    .sub{color:#555} .kpis{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0} .kpi{flex:1 1 180px;background:#f2f7f2;border-left:4px solid #2E7D32;padding:10px 14px;border-radius:4px}
-    .kpi b{font-size:1.5rem;display:block} .tbl{border-collapse:collapse;font-size:.85rem;margin:10px 0;width:100%} .tbl th{background:#e8f0e8;text-align:left;padding:5px 8px} .tbl td{padding:4px 8px;border-bottom:1px solid #e5e5e5}
-    .note{background:#fff8e1;border-left:4px solid #f9a825;padding:8px 12px;font-size:.9rem} .fig{margin:12px 0 28px} code{background:#f3f3f3;padding:1px 4px;border-radius:3px} footer{margin-top:40px;font-size:.85rem;color:#666}
+    :root{color-scheme:dark;--bg:#14181c;--surface:#1c2126;--text:#e3e7ea;--muted:#a9b3bb;--line:#2b3238;--green:#66BB6A;--green-bg:#1c2a1e;--amber:#f9a825;--amber-bg:#2b2410;--link:#8fd19e}
+    html{background:var(--bg)} body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:1000px;margin:0 auto;padding:24px;background:var(--bg);color:var(--text);line-height:1.5}
+    a{color:var(--link)} h1{font-size:1.7rem;margin-bottom:.2rem} h2{font-size:1.25rem;border-bottom:2px solid var(--green);padding-bottom:4px;margin-top:2.2rem}
+    .sub{color:var(--muted)} .kpis{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0} .kpi{flex:1 1 180px;background:var(--green-bg);border-left:4px solid var(--green);padding:10px 14px;border-radius:4px}
+    .kpi b{font-size:1.5rem;display:block} .tbl{border-collapse:collapse;font-size:.85rem;margin:10px 0;width:100%} .tbl th{background:var(--surface);text-align:left;padding:5px 8px;border-bottom:1px solid var(--green)} .tbl td{padding:4px 8px;border-bottom:1px solid var(--line)}
+    .note{background:var(--amber-bg);border-left:4px solid var(--amber);padding:8px 12px;font-size:.9rem} .fig{margin:12px 0 28px;background:var(--surface);border-radius:6px;padding:6px} code{background:var(--surface);padding:1px 4px;border-radius:3px} footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
     """
     kp = f"""
     <div class="kpis">
@@ -38,7 +54,7 @@ def main():
       <div class="kpi"><span>Darker green (share of green tasks above the mean)</span><b>{100*s['darker_share']:.1f}%</b></div>
       <div class="kpi"><span>Median posted wage, green vs non-green ({cur})</span><b>{s['median_wage_green']:,.0f} vs {s['median_wage_nongreen']:,.0f}</b></div>
     </div>"""
-    parts = [f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    parts = [f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
     <title>ILO Green Dictionary applied to online vacancies</title><style>{css}</style></head><body>
     <h1>Measuring green jobs in online vacancies with the ILO Green Dictionary</h1>
     <p class="sub">A documented replication of the ILO methodology (Delaporte, Escudero and Adamczyk 2025; Adamczyk et al. 2025) on a public corpus of {s['n_postings']:,} English-language job postings: <b>{html.escape(cp.get('name', ''))}</b> (<a href="{cp.get('source_url', '#')}">source</a>, {html.escape(cp.get('licence', ''))}). Code, dictionaries and this page: <a href="https://github.com/etorresram/ilo-green-dictionary-vacancies">github.com/etorresram/ilo-green-dictionary-vacancies</a>. Author: Eric Torres Ramírez.</p>
