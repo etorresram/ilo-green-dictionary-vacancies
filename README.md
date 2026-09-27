@@ -137,6 +137,9 @@ the PNG and interactive HTML figures, and `docs/index.html` the page (`output_my
 `docs/malaysia/` for the second corpus). The monthly series (green share by month, and by month and
 ISCO-08 major group) is produced automatically when a corpus has at least two months with 500 or
 more postings, as the Malaysia corpus does. Items that need applicants' data are not produced.
+The results page uses a dark theme: step 08 restyles the Plotly figures written by step 06 (page
+and series colours are set in `src/08_build_site.py`), so the pipeline does not need to be re-run
+to change the look of the page.
 
 ## Adapting to another country (checklist)
 1. Map national occupation and industry codes to ISCO-08 and ISIC Rev. 4 with the official tables;
