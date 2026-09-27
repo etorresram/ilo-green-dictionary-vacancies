@@ -14,12 +14,12 @@ def table_html(df, cols=None, n=None):
 # figures sit on the dark page without re-running the pipeline. Series colours keep their ordering:
 # "green" becomes a mid green that reads on a dark background and "darker green" stays the deeper shade.
 _DARK = [('"paper_bgcolor":"white"', '"paper_bgcolor":"rgba(0,0,0,0)"'), ('"plot_bgcolor":"white"', '"plot_bgcolor":"rgba(0,0,0,0)"'),
-         ('"bgcolor":"white"', '"bgcolor":"#1c2126"'), ('"color":"#2a3f5f"', '"color":"#e3e7ea"'),
-         ('"gridcolor":"#EBF0F8"', '"gridcolor":"#2b3238"'), ('"gridcolor":"#DFE8F3"', '"gridcolor":"#2b3238"'), ('"gridcolor":"#C8D4E3"', '"gridcolor":"#2b3238"'),
-         ('"linecolor":"#EBF0F8"', '"linecolor":"#3a444c"'), ('"linecolor":"#A2B1C6"', '"linecolor":"#3a444c"'), ('"linecolor":"#C8D4E3"', '"linecolor":"#3a444c"'),
-         ('"zerolinecolor":"#EBF0F8"', '"zerolinecolor":"#3a444c"'), ('"color":"white"', '"color":"#1c2126"'),
-         ('"color":"#2E7D32"', '"color":"#66BB6A"'), ('"color":"#1B5E20"', '"color":"#2E7D32"'),
-         ('"line":{"dash":"dash"}', '"line":{"dash":"dash","color":"#e3e7ea"}'), ('"mapbox":{"style":"light"}', '"mapbox":{"style":"dark"}')]
+         ('"bgcolor":"white"', '"bgcolor":"#1f1f1e"'), ('"color":"#2a3f5f"', '"color":"#c3c2b7"'),
+         ('"gridcolor":"#EBF0F8"', '"gridcolor":"#2c2c2a"'), ('"gridcolor":"#DFE8F3"', '"gridcolor":"#2c2c2a"'), ('"gridcolor":"#C8D4E3"', '"gridcolor":"#2c2c2a"'),
+         ('"linecolor":"#EBF0F8"', '"linecolor":"#383835"'), ('"linecolor":"#A2B1C6"', '"linecolor":"#383835"'), ('"linecolor":"#C8D4E3"', '"linecolor":"#383835"'),
+         ('"zerolinecolor":"#EBF0F8"', '"zerolinecolor":"#383835"'), ('"color":"white"', '"color":"#1f1f1e"'),
+         ('"color":"#2E7D32"', '"color":"#4fb35e"'), ('"color":"#1B5E20"', '"color":"#2a7f3b"'), ('"color":"#9E9E9E"', '"color":"#8c8b84"'),
+         ('"line":{"dash":"dash"}', '"line":{"dash":"dash","color":"#c3c2b7"}'), ('"mapbox":{"style":"light"}', '"mapbox":{"style":"dark"}')]
 
 def dark(fig_html):
     for a, b in _DARK: fig_html = fig_html.replace(a, b)
@@ -40,12 +40,17 @@ def main():
     tb = pd.read_csv(T / "t21_boilerplate_sensitivity.csv") if (T / "t21_boilerplate_sensitivity.csv").exists() else None
     t19s = t19.groupby("isco08_submajor_label")["expression"].apply(lambda x: ", ".join(x.head(10))).reset_index().rename(columns={"isco08_submajor_label": "ISCO-08 sub-major group", "expression": "Top candidate expressions (over-represented in green vacancies)"})
     css = """
-    :root{color-scheme:dark;--bg:#14181c;--surface:#1c2126;--text:#e3e7ea;--muted:#a9b3bb;--line:#2b3238;--green:#66BB6A;--green-bg:#1c2a1e;--amber:#f9a825;--amber-bg:#2b2410;--link:#8fd19e}
-    html{background:var(--bg)} body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:1000px;margin:0 auto;padding:24px;background:var(--bg);color:var(--text);line-height:1.5}
-    a{color:var(--link)} h1{font-size:1.7rem;margin-bottom:.2rem} h2{font-size:1.25rem;border-bottom:2px solid var(--green);padding-bottom:4px;margin-top:2.2rem}
-    .sub{color:var(--muted)} .kpis{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0} .kpi{flex:1 1 180px;background:var(--green-bg);border-left:4px solid var(--green);padding:10px 14px;border-radius:4px}
-    .kpi b{font-size:1.5rem;display:block} .tbl{border-collapse:collapse;font-size:.85rem;margin:10px 0;width:100%} .tbl th{background:var(--surface);text-align:left;padding:5px 8px;border-bottom:1px solid var(--green)} .tbl td{padding:4px 8px;border-bottom:1px solid var(--line)}
-    .note{background:var(--amber-bg);border-left:4px solid var(--amber);padding:8px 12px;font-size:.9rem} .fig{margin:12px 0 28px;background:var(--surface);border-radius:6px;padding:6px} code{background:var(--surface);padding:1px 4px;border-radius:3px} footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
+    :root{color-scheme:dark;--page:#121211;--card:#1f1f1e;--hair:rgba(255,255,255,.10);--ink:#f4f3ee;--ink2:#c3c2b7;--muted:#898781;--green:#4fb35e;--link:#6cc77a;--warn:#fab219}
+    html{background:var(--page)} body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:1000px;margin:0 auto;padding:32px 24px 48px;background:var(--page);color:var(--ink);line-height:1.55}
+    a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px} h1{font-size:1.75rem;line-height:1.25;margin:0 0 .4rem;letter-spacing:-.01em}
+    h2{font-size:1.2rem;font-weight:600;margin:2.6rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--hair)}
+    .sub{color:var(--ink2)} .sub b{color:var(--ink)} .kpis{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+    .kpi{flex:1 1 180px;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:14px 16px} .kpi span{display:block;color:var(--muted);font-size:.82rem;line-height:1.35}
+    .kpi b{display:block;margin-top:6px;font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+    .tbl{border-collapse:collapse;font-size:.85rem;margin:10px 0 18px;width:100%;font-variant-numeric:tabular-nums} .tbl th{color:var(--ink2);font-weight:600;text-align:left;padding:8px;border-bottom:1px solid var(--ink2)} .tbl td{padding:6px 8px;border-bottom:1px solid var(--hair);color:var(--ink2)} .tbl td:first-child{color:var(--ink)}
+    .note{background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--warn);border-radius:0 8px 8px 0;padding:10px 14px;font-size:.9rem;color:var(--ink2);margin:14px 0} .note b{color:var(--ink)}
+    .fig{margin:12px 0 28px;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:8px} code{background:var(--card);border:1px solid var(--hair);padding:1px 5px;border-radius:4px;font-size:.9em}
+    ol li,ul li{margin:.25rem 0} p{color:var(--ink2)} p b,li b{color:var(--ink)} footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--hair);font-size:.82rem;color:var(--muted)}
     """
     kp = f"""
     <div class="kpis">
