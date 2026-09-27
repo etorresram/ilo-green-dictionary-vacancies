@@ -14,12 +14,12 @@ def table_html(df, cols=None, n=None):
 # figures sit on the dark page without re-running the pipeline. Series colours keep their ordering:
 # "green" becomes a mid green that reads on a dark background and "darker green" stays the deeper shade.
 _DARK = [('"paper_bgcolor":"white"', '"paper_bgcolor":"rgba(0,0,0,0)"'), ('"plot_bgcolor":"white"', '"plot_bgcolor":"rgba(0,0,0,0)"'),
-         ('"bgcolor":"white"', '"bgcolor":"#1f1f1e"'), ('"color":"#2a3f5f"', '"color":"#c3c2b7"'),
-         ('"gridcolor":"#EBF0F8"', '"gridcolor":"#2c2c2a"'), ('"gridcolor":"#DFE8F3"', '"gridcolor":"#2c2c2a"'), ('"gridcolor":"#C8D4E3"', '"gridcolor":"#2c2c2a"'),
-         ('"linecolor":"#EBF0F8"', '"linecolor":"#383835"'), ('"linecolor":"#A2B1C6"', '"linecolor":"#383835"'), ('"linecolor":"#C8D4E3"', '"linecolor":"#383835"'),
-         ('"zerolinecolor":"#EBF0F8"', '"zerolinecolor":"#383835"'), ('"color":"white"', '"color":"#1f1f1e"'),
-         ('"color":"#2E7D32"', '"color":"#4fb35e"'), ('"color":"#1B5E20"', '"color":"#2a7f3b"'), ('"color":"#9E9E9E"', '"color":"#8c8b84"'),
-         ('"line":{"dash":"dash"}', '"line":{"dash":"dash","color":"#c3c2b7"}'), ('"mapbox":{"style":"light"}', '"mapbox":{"style":"dark"}')]
+         ('"bgcolor":"white"', '"bgcolor":"#172033"'), ('"color":"#2a3f5f"', '"color":"#b8c2d1"'),
+         ('"gridcolor":"#EBF0F8"', '"gridcolor":"#26304a"'), ('"gridcolor":"#DFE8F3"', '"gridcolor":"#26304a"'), ('"gridcolor":"#C8D4E3"', '"gridcolor":"#26304a"'),
+         ('"linecolor":"#EBF0F8"', '"linecolor":"#33405c"'), ('"linecolor":"#A2B1C6"', '"linecolor":"#33405c"'), ('"linecolor":"#C8D4E3"', '"linecolor":"#33405c"'),
+         ('"zerolinecolor":"#EBF0F8"', '"zerolinecolor":"#33405c"'), ('"color":"white"', '"color":"#172033"'),
+         ('"color":"#2E7D32"', '"color":"#4fb35e"'), ('"color":"#1B5E20"', '"color":"#2a7f3b"'), ('"color":"#9E9E9E"', '"color":"#8a97ad"'),
+         ('"line":{"dash":"dash"}', '"line":{"dash":"dash","color":"#b8c2d1"}'), ('"mapbox":{"style":"light"}', '"mapbox":{"style":"dark"}')]
 
 def dark(fig_html):
     for a, b in _DARK: fig_html = fig_html.replace(a, b)
@@ -40,7 +40,7 @@ def main():
     tb = pd.read_csv(T / "t21_boilerplate_sensitivity.csv") if (T / "t21_boilerplate_sensitivity.csv").exists() else None
     t19s = t19.groupby("isco08_submajor_label")["expression"].apply(lambda x: ", ".join(x.head(10))).reset_index().rename(columns={"isco08_submajor_label": "ISCO-08 sub-major group", "expression": "Top candidate expressions (over-represented in green vacancies)"})
     css = """
-    :root{color-scheme:dark;--page:#121211;--card:#1f1f1e;--hair:rgba(255,255,255,.10);--ink:#f4f3ee;--ink2:#c3c2b7;--muted:#898781;--green:#4fb35e;--link:#6cc77a;--warn:#fab219}
+    :root{color-scheme:dark;--page:#0f1520;--card:#172033;--hair:rgba(255,255,255,.10);--ink:#eef2f7;--ink2:#b8c2d1;--muted:#8391a6;--green:#4fb35e;--link:#7fb3ff;--warn:#f5b83d}
     html{background:var(--page)} body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:1000px;margin:0 auto;padding:32px 24px 48px;background:var(--page);color:var(--ink);line-height:1.55}
     a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px} h1{font-size:1.75rem;line-height:1.25;margin:0 0 .4rem;letter-spacing:-.01em}
     h2{font-size:1.2rem;font-weight:600;margin:2.6rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--hair)}
